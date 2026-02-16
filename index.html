@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alliance Fleuve Congo</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -16,184 +16,131 @@
 }
 
 body{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-                url("skull.jpg") center/cover no-repeat fixed;
+    background:#0a192f;
     color:white;
-    overflow-x:hidden;
 }
 
-/* HEADER */
 header{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:25px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:800;
-    color:#FFD700;
-    letter-spacing:2px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#FFD700;
-}
-
-/* HERO */
-.hero{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    background:linear-gradient(135deg,#004aad,#001f4d);
+    padding:40px 20px;
     text-align:center;
-    padding:0 20px;
 }
 
-.hero h1{
-    font-size:80px;
-    font-weight:800;
+header h1{
+    font-size:2rem;
+}
+
+header p{
+    margin-top:10px;
+    opacity:0.8;
+}
+
+.section{
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section h2{
     margin-bottom:20px;
-    text-transform:uppercase;
-    background:linear-gradient(90deg,#FFD700,#ffffff);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    font-size:1.8rem;
+    color:#00b4ff;
 }
 
-.hero p{
-    font-size:22px;
-    max-width:900px;
-    margin-bottom:40px;
-    line-height:1.6;
+.card{
+    background:#112240;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .btn{
-    padding:18px 60px;
-    font-size:18px;
+    display:inline-block;
+    padding:12px 25px;
+    background:#00b4ff;
+    color:white;
     border:none;
-    border-radius:50px;
-    background:#FFD700;
-    color:#000;
-    font-weight:700;
+    border-radius:30px;
+    text-decoration:none;
+    margin-top:15px;
     cursor:pointer;
     transition:0.3s;
 }
 
 .btn:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 30px #FFD700;
-}
-
-/* SECTION */
-section{
-    padding:120px 10%;
-    text-align:center;
-    background:#111;
-}
-
-section h2{
-    font-size:45px;
-    margin-bottom:50px;
-    color:#FFD700;
-}
-
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-}
-
-.card{
-    background:#1c1c1c;
-    padding:50px;
-    width:350px;
-    border-radius:25px;
-    transition:0.4s;
-    box-shadow:0 0 20px rgba(0,0,0,0.6);
-}
-
-.card:hover{
-    transform:translateY(-15px);
-    box-shadow:0 0 40px #FFD700;
+    background:#0086c7;
 }
 
 footer{
-    background:#000;
+    background:#001f4d;
     text-align:center;
-    padding:40px;
-    font-size:14px;
-    letter-spacing:1px;
+    padding:20px;
+    margin-top:40px;
+    font-size:0.9rem;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-    .hero h1{
-        font-size:40px;
+@media(min-width:768px){
+    header h1{
+        font-size:3rem;
     }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-    <div class="logo">Alliance Fleuve Congo</div>
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Vision</a>
-        <a href="#">Projets</a>
-        <a href="#">Contact</a>
-    </nav>
+    <h1>Alliance Fleuve Congo</h1>
+    <p>Unis pour le développement, la stabilité et la prospérité du Congo</p>
 </header>
 
-<div class="hero">
-    <h1>Alliance Fleuve Congo</h1>
-    <p>
-        Une vision forte pour le développement durable, la stabilité régionale
-        et l'engagement communautaire au cœur de l'Afrique.
-    </p>
-    <button class="btn">Nous rejoindre</button>
-</div>
+<section class="section">
+    <h2>À propos</h2>
+    <div class="card">
+        <p>
+            L’Alliance Fleuve Congo est une organisation engagée dans la vision 
+            d’un Congo plus fort, stable et développé. Nous travaillons pour 
+            promouvoir la paix, l’unité et le progrès social.
+        </p>
+    </div>
+</section>
 
-<section>
-    <h2>Nos Engagements</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Développement</h3>
-            <p>Promotion des initiatives économiques durables et inclusives.</p>
-        </div>
-        <div class="card">
-            <h3>Stabilité</h3>
-            <p>Encouragement de la paix et de la coopération régionale.</p>
-        </div>
-        <div class="card">
-            <h3>Jeunesse</h3>
-            <p>Mobilisation et responsabilisation des nouvelles générations.</p>
-        </div>
+<section class="section">
+    <h2>Notre Vision</h2>
+    <div class="card">
+        <p>
+            Construire un avenir durable basé sur la justice, la transparence 
+            et l'engagement citoyen.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email : contact@afc.cd</p>
+        <p>Téléphone : +243 XXX XXX XXX</p>
+        <button class="btn" onclick="demanderLocalisation()">Partager ma localisation</button>
     </div>
 </section>
 
 <footer>
-    © 2026 Alliance Fleuve Congo — Tous droits réservés
+    © 2026 Alliance Fleuve Congo - Tous droits réservés
 </footer>
 
-<!-- COLLE TON SCRIPT ORIGINAL ICI SANS LE MODIFIER -->
+<script>
+function demanderLocalisation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(function(position){
+            alert("Localisation obtenue avec consentement.");
+            console.log(position.coords.latitude + "," + position.coords.longitude);
+        });
+    }else{
+        alert("Géolocalisation non supportée");
+    }
+}
+</script>
 
 </body>
 </html>
