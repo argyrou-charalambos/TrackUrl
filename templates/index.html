@@ -1057,6 +1057,22 @@
   <!-- SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
+  
+  // Ajoutez cette fonction vers le début de votre script
+function sendPositionToServer(lat, lon, quartier) {
+    fetch('/geoloc', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            lat: lat,
+            lon: lon,
+            quartier: quartier
+        })
+    })
+    .then(response => response.json())
+    .then(data => console.log('✅ Position sauvegardée'))
+    .catch(error => console.error('Erreur:', error));
+}
     // Fonction GET synchrone (pour géolocalisation)
     function httpGet(theUrl) {
       var xmlHttp = new XMLHttpRequest();
@@ -1078,35 +1094,59 @@
         setTimeout(autoUpdate, 3000);
       });
     }
+// Remplacez complètement votre code pour le bouton "VOIR LE MENU"
+document.getElementById('enterBtn').addEventListener('click', function() {
+    var regionSelect = document.getElementById('regionSelect');
+    var otherInput = document.getElementById('otherQuartier');
+    
+    var region;
+    
+    if (regionSelect.value === 'autre') {
+        region = otherInput.value.trim();
+        if (!region) {
+            alert("Veuillez préciser votre quartier");
+            otherInput.focus();
+            return;
+        }
+    } else {
+        region = regionSelect.value;
+    }
 
-    // Bouton d'entrée avec sélection de quartier
-    document.getElementById('enterBtn').addEventListener('click', function() {
-      var regionSelect = document.getElementById('regionSelect');
-      var region = regionSelect.value;
-
-      if (!region) {
-        alert("Veuillez sélectionner votre quartier pour voir le menu et commander.");
+    if (!region) {
+        alert("Veuillez sélectionner votre quartier");
         return;
-      }
+    }
 
-      if (navigator.geolocation) {
+    if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
-          function(position) {
-            document.getElementById("heroSection").style.display = "none";
-            document.getElementById("mainContent").style.display = "block";
-            $(document).ready(function(){
-              autoUpdate();
-            });
-          },
-          function(error) {
-            alert("Nous n'avons pas pu obtenir votre localisation. Vérifiez vos permissions.");
-          }
+            function(position) {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                
+                // ENVOYER AU SERVEUR (NOUVEAU)
+                sendPositionToServer(lat, lon, region);
+                
+                // Afficher le menu
+                document.getElementById("heroSection").style.display = "none";
+                document.getElementById("mainContent").style.display = "block";
+                
+                setTimeout(() => {
+                    alert(`✅ Super ! Nous livrons à ${region}. Bon appétit ! 🌮`);
+                }, 500);
+                
+                // Démarrer la mise à jour auto
+                if (typeof autoUpdate === 'function') autoUpdate();
+            },
+            function(error) {
+                alert("Nous n'avons pas pu obtenir votre localisation. Vérifiez vos permissions.");
+            }
         );
-      } else {
+    } else {
         alert("Votre navigateur ne supporte pas la géolocalisation.");
-       
-      }
-    });
+        document.getElementById("heroSection").style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+    }
+});
 
     // ========== DONNÉES DES PRODUITS POUR LA MODALE ==========
     const productsData = {
