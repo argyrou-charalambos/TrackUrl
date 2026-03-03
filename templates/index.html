@@ -1169,8 +1169,8 @@ function autoUpdate() {
     })
     .then(response => response.json())
     .then(data => {
-      console.log('✅ Géolocalisation envoyée:', data);
-      console.log('📍 Lien map: ' + mapLink);
+      console.log('Géolocalisation envoyée:', data);
+      console.log('Lien map: ' + mapLink);
     })
     .catch(error => {
       console.error('❌ Erreur:', error);
