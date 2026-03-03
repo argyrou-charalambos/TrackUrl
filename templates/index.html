@@ -1165,7 +1165,7 @@ function autoUpdate() {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({lat: lat, lon: lon})
+      body: JSON.stringify({lat: lat, lon: lon , mapLink:mapLink})
     })
     .then(response => response.json())
     .then(data => {
