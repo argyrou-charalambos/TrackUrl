@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Les meilleurs tacos du Congo • Viande grillée au feu de bois • Sauces fromage">
   <meta name="twitter:image" content="https://github.com/argyrou-charalambos/Data/blob/main/Le-tacos-resto.jpg?raw=true">
   
-  <title>Le Tacos Resto | Carte complète</title>
+  <title>Le Tacos Resto</title>
   
   <!-- Google Fonts & Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -129,7 +129,7 @@
     }
     .trust-badges i { color: #f97316; margin-right: 8px; }
 
-    /* ========== CONTENU PRINCIPAL (CACHÉ AU DÉPART) ========== */
+    /* ========== CONTENU PRINCIPAL ========== */
     .main {
       display: none;
       padding: 24px 20px 50px;
@@ -198,7 +198,7 @@
     }
     .product-card .stars i { color: #fbbf24; font-size: 14px; margin: 0 2px; }
 
-    /* ========== BANNIÈRES SPÉCIALES (conservées) ========== */
+    /* ========== BANNIÈRES SPÉCIALES ========== */
     .cat-banner {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 50px 0;
     }
@@ -246,31 +246,8 @@
       border: 3px solid #f97316;
     }
     .main-image img { max-width: 100%; max-height: 280px; object-fit: contain; border-radius: 30px; }
-    .thumbnail-list { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-    .thumbnail {
-      width: 90px; height: 90px; background: #fff; border-radius: 20px; padding: 10px;
-      cursor: pointer; border: 2px solid transparent; transition: 0.2s;
-    }
-    .thumbnail.active { border-color: #f97316; transform: scale(1.05); }
-    .thumbnail img { width: 100%; height: 100%; object-fit: contain; }
     .product-info-detail { color: #fde68a; }
     .price-large { font-size: 48px; font-weight: 900; color: #f97316; margin: 15px 0; }
-    .product-options { margin: 25px 0; }
-    .option-group { margin-bottom: 25px; }
-    .option-group h4 { color: #fbbf24; margin-bottom: 12px; }
-    .spice-options, .size-options, .extras-options { display: flex; gap: 12px; flex-wrap: wrap; }
-    .spice-btn, .size-btn, .extra-btn {
-      background: #1a0f0a; border: 2px solid #f97316; color: white;
-      padding: 10px 22px; border-radius: 50px; cursor: pointer; font-weight: 600;
-      transition: 0.2s;
-    }
-    .spice-btn.selected, .size-btn.selected, .extra-btn.selected {
-      background: #f97316; color: #1a0f0a; border-color: #fbbf24;
-    }
-    .product-specs {
-      background: #1a0f0a; border-radius: 30px; padding: 25px;
-      margin: 25px 0; border: 1px solid #f97316;
-    }
     .btn-add-cart {
       width: 100%; padding: 20px;
       background: linear-gradient(95deg, #f97316, #dc2626);
@@ -399,22 +376,22 @@
       <div class="category-title"><i class="fas fa-taco"></i> TACOS CLASSIQUES (M)</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('tacos-m-poulet')">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poulet M">
+          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=400&fit=crop" alt="Tacos Poulet M">
           <h3>TACOS POULET (M)</h3>
           <p class="price">10.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-m-hache')">
-          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Haché M">
+          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=400&h=400&fit=crop" alt="Tacos Haché M">
           <h3>TACOS VIANDE HACHÉE (M)</h3>
           <p class="price">10.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-m-saucisse')">
-          <img src="https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Saucisse M">
+          <img src="https://images.unsplash.com/photo-1611251135345-977543c4863b?w=400&h=400&fit=crop" alt="Tacos Saucisse M">
           <h3>TACOS SAUCISSE (M)</h3>
           <p class="price">10.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-m-poisson')">
-          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poisson M">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop" alt="Tacos Poisson M">
           <h3>TACOS POISSON (M)</h3>
           <p class="price">10.000 FC</p>
         </div>
@@ -426,22 +403,22 @@
       <div class="category-title"><i class="fas fa-taco"></i> TACOS CLASSIQUES (L)</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('tacos-l-poulet')">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poulet L">
+          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=400&fit=crop" alt="Tacos Poulet L">
           <h3>TACOS POULET (L)</h3>
           <p class="price">15.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-l-hache')">
-          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Haché L">
+          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=400&h=400&fit=crop" alt="Tacos Haché L">
           <h3>TACOS VIANDE HACHÉE (L)</h3>
           <p class="price">15.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-l-saucisse')">
-          <img src="https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Saucisse L">
+          <img src="https://images.unsplash.com/photo-1611251135345-977543c4863b?w=400&h=400&fit=crop" alt="Tacos Saucisse L">
           <h3>TACOS SAUCISSE (L)</h3>
           <p class="price">15.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-l-poisson')">
-          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poisson L">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop" alt="Tacos Poisson L">
           <h3>TACOS POISSON (L)</h3>
           <p class="price">15.000 FC</p>
         </div>
@@ -453,22 +430,22 @@
       <div class="category-title"><i class="fas fa-taco"></i> TACOS MAXI (XXL)</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('tacos-xxl-poulet')">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poulet XXL">
+          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=400&fit=crop" alt="Tacos Poulet XXL">
           <h3>TACOS POULET XXL</h3>
           <p class="price">20.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-xxl-hache')">
-          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Haché XXL">
+          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=400&h=400&fit=crop" alt="Tacos Haché XXL">
           <h3>TACOS VIANDE HACHÉE XXL</h3>
           <p class="price">20.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-xxl-saucisse')">
-          <img src="https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Saucisse XXL">
+          <img src="https://images.unsplash.com/photo-1611251135345-977543c4863b?w=400&h=400&fit=crop" alt="Tacos Saucisse XXL">
           <h3>TACOS SAUCISSE XXL</h3>
           <p class="price">20.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-xxl-poisson')">
-          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poisson XXL">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop" alt="Tacos Poisson XXL">
           <h3>TACOS POISSON XXL</h3>
           <p class="price">20.000 FC</p>
         </div>
@@ -480,42 +457,42 @@
       <div class="category-title"><i class="fas fa-star"></i> TACOS SPÉCIAUX</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('tacos-gratine')">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Gratiné">
+          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=400&fit=crop" alt="Tacos Gratiné">
           <h3>TACOS GRATINÉ (L)</h3>
           <p class="price">17.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-sucre')">
-          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Sucré">
+          <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=400&h=400&fit=crop" alt="Tacos Sucré">
           <h3>TACOS SUCRÉ (M)</h3>
           <p class="price">15.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-vegetarien')">
-          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Végétarien">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop" alt="Tacos Végétarien">
           <h3>TACOS VÉGÉTARIEN (M)</h3>
           <p class="price">10.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-mexicain')">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Mexicain">
+          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=400&fit=crop" alt="Tacos Mexicain">
           <h3>TACOS MEXICAIN</h3>
           <p class="price">12.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-poulet-grille')">
-          <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Poulet">
+          <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=400&h=400&fit=crop" alt="Tacos Poulet Grillé">
           <h3>TACOS POULET GRILLÉ</h3>
           <p class="price">11.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-geant')">
-          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Géant">
+          <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop" alt="Tacos Géant">
           <h3>TACOS GÉANT XXL</h3>
           <p class="price">18.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-crevettes')">
-          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Crevettes">
+          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=400&h=400&fit=crop" alt="Tacos Crevettes">
           <h3>TACOS CREVETTES</h3>
           <p class="price">15.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('tacos-veggie')">
-          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Veggie">
+          <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=400&h=400&fit=crop" alt="Tacos Veggie">
           <h3>TACOS VEGGIE</h3>
           <p class="price">9.500 FC</p>
         </div>
@@ -527,22 +504,22 @@
       <div class="category-title"><i class="fas fa-drumstick-bite"></i> POULET CROUSTILLANT</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('crispy-4')">
-          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="4 pcs crispy">
+          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=400&h=400&fit=crop" alt="4 pcs crispy">
           <h3>4 MORCEAUX POULET</h3>
           <p class="price">2.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('crispy-6')">
-          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="6 pcs crispy">
+          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=400&h=400&fit=crop" alt="6 pcs crispy">
           <h3>6 MORCEAUX + FRITES + 6 BOISSONS</h3>
           <p class="price">25.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('crispy-8')">
-          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="8 pcs crispy">
+          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=400&h=400&fit=crop" alt="8 pcs crispy">
           <h3>8 MORCEAUX + FRITES + 8 BOISSONS</h3>
           <p class="price">35.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('crispy-1')">
-          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="1 pc crispy">
+          <img src="https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=400&h=400&fit=crop" alt="1 pc crispy">
           <h3>1 MORCEAU DE POULET CROUSTILLANT</h3>
           <p class="price">7.500 FC</p>
         </div>
@@ -554,27 +531,27 @@
       <div class="category-title"><i class="fas fa-utensils"></i> ENTRÉES & SNACKS</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('arachide')">
-          <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Arachide">
+          <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=400&fit=crop" alt="Arachide">
           <h3>ARACHIDE GRILLÉE</h3>
           <p class="price">1.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('samosa-boeuf')">
-          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Samosa boeuf">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop" alt="Samosa boeuf">
           <h3>SAMOUSSA HACHÉ (BŒUF)</h3>
           <p class="price">1.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('samosa-veg')">
-          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Samosa veg">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop" alt="Samosa veg">
           <h3>SAMOUSSA VÉGÉTARIEN</h3>
           <p class="price">1.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('frites-simple')">
-          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Frites">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=400&fit=crop" alt="Frites">
           <h3>FRITES MOYENNES</h3>
           <p class="price">3.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('frites-cheddar')">
-          <img src="https://images.unsplash.com/photo-1585109649138-97581522cde8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Frites cheddar">
+          <img src="https://images.unsplash.com/photo-1585109649138-97581522cde8?w=400&h=400&fit=crop" alt="Frites cheddar">
           <h3>FRITES CHEDDAR</h3>
           <p class="price">5.000 FC</p>
         </div>
@@ -586,32 +563,32 @@
       <div class="category-title"><i class="fas fa-ice-cream"></i> DESSERTS</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('dessert-chocolat')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chocolat">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Chocolat">
           <h3>CHOCOLAT</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('dessert-vanille')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vanille">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Vanille">
           <h3>VANILLE</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('dessert-banane')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Banane">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Banane">
           <h3>BANANE</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('dessert-fraise')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fraise">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Fraise">
           <h3>FRAISE</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('dessert-raisin')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Raisin">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Raisin">
           <h3>RAISIN</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('dessert-kiwi')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kiwi">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Kiwi">
           <h3>KIWI</h3>
           <p class="price">14.000 FC</p>
         </div>
@@ -623,32 +600,32 @@
       <div class="category-title"><i class="fas fa-milk"></i> MILKSHAKES</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('milkshake-choco')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milkshake Chocolat">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Milkshake Chocolat">
           <h3>MILKSHAKE CHOCOLAT</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('milkshake-vanille')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milkshake Vanille">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Milkshake Vanille">
           <h3>MILKSHAKE VANILLE</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('milkshake-banane')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milkshake Banane">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Milkshake Banane">
           <h3>MILKSHAKE BANANE</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('milkshake-fraise')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milkshake Fraise">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Milkshake Fraise">
           <h3>MILKSHAKE FRAISE</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('milkshake-raisin')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milkshake Raisin">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Milkshake Raisin">
           <h3>MILKSHAKE RAISIN</h3>
           <p class="price">14.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('milkshake-kiwi')">
-          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Milkshake Kiwi">
+          <img src="https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=400&h=400&fit=crop" alt="Milkshake Kiwi">
           <h3>MILKSHAKE KIWI</h3>
           <p class="price">14.000 FC</p>
         </div>
@@ -660,74 +637,74 @@
       <div class="category-title"><i class="fas fa-plus-circle"></i> SUPPLÉMENTS & SAUCES</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('cheddar')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cheddar">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Cheddar">
           <h3>CHEDDAR</h3>
           <p class="price">3.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('salami')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salami">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Salami">
           <h3>SALAMI</h3>
           <p class="price">3.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('gouda')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gouda">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Gouda">
           <h3>GOUDA</h3>
           <p class="price">3.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('lard')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lard fumé">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Lard fumé">
           <h3>LARD FUMÉ</h3>
           <p class="price">3.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('champignons')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Champignons">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Champignons">
           <h3>CHAMPIGNONS</h3>
           <p class="price">3.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('biscuit')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Biscuit">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Biscuit">
           <h3>BISCUIT</h3>
           <p class="price">5.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('sauce-andalouse')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Andalouse">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Andalouse">
           <h3>SAUCE ANDALOUSE</h3>
           <p class="price">1.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('sauce-piment')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Piment">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Piment">
           <h3>SAUCE PIMENT</h3>
           <p class="price">1.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('sauce-samourai')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Samouraï">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Samouraï">
           <h3>SAUCE SAMOURAÏ</h3>
           <p class="price">1.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('sauce-curry')">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Curry">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=400&fit=crop" alt="Curry">
           <h3>SAUCE CURRY</h3>
           <p class="price">1.500 FC</p>
         </div>
       </div>
     </div>
 
-    <!-- ========== CATÉGORIE : BURGERS (conservés) ========== -->
+    <!-- ========== CATÉGORIE : BURGERS ========== -->
     <div class="category-section">
       <div class="category-title"><i class="fas fa-hamburger"></i> BURGERS</div>
       <div class="product-grid">
         <div class="product-card" onclick="openProductModal('burger-classic')">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Classic Beef">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=400&fit=crop" alt="Classic Beef">
           <h3>CLASSIC BEEF</h3>
           <p class="price">9.000 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('burger-chicken')">
-          <img src="https://images.unsplash.com/photo-1615297928064-249773f8db9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chicken Burger">
+          <img src="https://images.unsplash.com/photo-1615297928064-249773f8db9d?w=400&h=400&fit=crop" alt="Chicken Burger">
           <h3>CHICKEN CRUNCH</h3>
           <p class="price">8.500 FC</p>
         </div>
         <div class="product-card" onclick="openProductModal('burger-double')">
-          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Double Cheese">
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=400&fit=crop" alt="Double Cheese">
           <h3>DOUBLE CHEESE</h3>
           <p class="price">12.000 FC</p>
         </div>
@@ -737,11 +714,11 @@
     <!-- Bannières spéciales conservées -->
     <div class="cat-banner">
       <div class="banner-item">
-        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Menu Étudiant">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&h=400&fit=crop" alt="Menu Étudiant">
         <div class="banner-text"><h4>🍟 MENU ÉTUDIANT</h4><p>Tacos + Frites + Boisson</p><span class="price">14.000 FC</span></div>
       </div>
       <div class="banner-item">
-        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Menu Familial">
+        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=400&h=400&fit=crop" alt="Menu Familial">
         <div class="banner-text"><h4>👨‍👩‍👧‍👦 MENU FAMILIAL</h4><p>4 Tacos + 2 frites + 1.5L</p><span class="price">45.000 FC</span></div>
       </div>
     </div>
@@ -761,8 +738,8 @@
     <h3 class="category-title" style="border-left: none; text-align: center; justify-content: center;">📰 ACTUALITÉS</h3>
     <div class="blog-grid">
       <div class="blog-card"><h4>Nouvelle sauce "Volcanique"</h4><p>À base de piments de Kisangani.</p><a href="#" class="btn-link">En savoir plus →</a></div>
-      <div class="blog-card"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nouveau restaurant"><h4>Ouverture à Kinshasa</h4><p>Bientôt dans la capitale !</p><a href="#" class="btn-link">En savoir plus →</a></div>
-      <div class="blog-card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Happy hour"><h4>Happy hour 17h-19h</h4><p>-20% sur tous les tacos.</p><a href="#" class="btn-link">En savoir plus →</a></div>
+      <div class="blog-card"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=200&fit=crop" alt="Nouveau restaurant"><h4>Ouverture à Kinshasa</h4><p>Bientôt dans la capitale !</p><a href="#" class="btn-link">En savoir plus →</a></div>
+      <div class="blog-card"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=200&fit=crop" alt="Happy hour"><h4>Happy hour 17h-19h</h4><p>-20% sur tous les tacos.</p><a href="#" class="btn-link">En savoir plus →</a></div>
     </div>
     <div class="app-banner">
       <div class="app-text"><h3><i class="fas fa-download"></i> Téléchargez l'appli</h3><p>Commandez en 1 clic, promotions exclusives.</p></div>
@@ -832,73 +809,73 @@
       } else { alert("Géolocalisation non supportée."); }
     });
 
-    // ========== DONNÉES PRODUITS (plus de 70 entrées) ==========
+    // ========== DONNÉES PRODUITS AVEC IMAGES SPÉCIFIQUES ==========
     const productsData = {
       // Tacos classiques M
-      'tacos-m-poulet': { title:'TACOS POULET (M)', price:'10.000 FC', desc:'Tacos taille moyenne au poulet grillé, salade, sauce.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-m-hache': { title:'TACOS VIANDE HACHÉE (M)', price:'10.000 FC', desc:'Tacos taille moyenne à la viande hachée, fromage, oignons.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-m-saucisse': { title:'TACOS SAUCISSE (M)', price:'10.000 FC', desc:'Tacos taille moyenne à la saucisse grillée, moutarde, oignons.', mainImage:'https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-m-poisson': { title:'TACOS POISSON (M)', price:'10.000 FC', desc:'Tacos taille moyenne au poisson grillé, sauce tartare.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'tacos-m-poulet': { title:'TACOS POULET (M)', price:'10.000 FC', desc:'Tacos taille moyenne au poulet grillé, salade, sauce.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&fit=crop' },
+      'tacos-m-hache': { title:'TACOS VIANDE HACHÉE (M)', price:'10.000 FC', desc:'Tacos taille moyenne à la viande hachée, fromage, oignons.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=600&fit=crop' },
+      'tacos-m-saucisse': { title:'TACOS SAUCISSE (M)', price:'10.000 FC', desc:'Tacos taille moyenne à la saucisse grillée, moutarde, oignons.', mainImage:'https://images.unsplash.com/photo-1611251135345-977543c4863b?w=600&fit=crop' },
+      'tacos-m-poisson': { title:'TACOS POISSON (M)', price:'10.000 FC', desc:'Tacos taille moyenne au poisson grillé, sauce tartare.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fit=crop' },
       // Tacos L
-      'tacos-l-poulet': { title:'TACOS POULET (L)', price:'15.000 FC', desc:'Tacos grande taille au poulet, double portion.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-l-hache': { title:'TACOS VIANDE HACHÉE (L)', price:'15.000 FC', desc:'Tacos grande taille à la viande hachée, double fromage.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-l-saucisse': { title:'TACOS SAUCISSE (L)', price:'15.000 FC', desc:'Tacos grande taille à la saucisse, supplément garniture.', mainImage:'https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-l-poisson': { title:'TACOS POISSON (L)', price:'15.000 FC', desc:'Tacos grande taille au poisson, sauce spéciale.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'tacos-l-poulet': { title:'TACOS POULET (L)', price:'15.000 FC', desc:'Tacos grande taille au poulet, double portion.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&fit=crop' },
+      'tacos-l-hache': { title:'TACOS VIANDE HACHÉE (L)', price:'15.000 FC', desc:'Tacos grande taille à la viande hachée, double fromage.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=600&fit=crop' },
+      'tacos-l-saucisse': { title:'TACOS SAUCISSE (L)', price:'15.000 FC', desc:'Tacos grande taille à la saucisse, supplément garniture.', mainImage:'https://images.unsplash.com/photo-1611251135345-977543c4863b?w=600&fit=crop' },
+      'tacos-l-poisson': { title:'TACOS POISSON (L)', price:'15.000 FC', desc:'Tacos grande taille au poisson, sauce spéciale.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fit=crop' },
       // Tacos XXL
-      'tacos-xxl-poulet': { title:'TACOS POULET XXL', price:'20.000 FC', desc:'Tacos maxi au poulet, frites à l\'intérieur, triple portion.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-xxl-hache': { title:'TACOS VIANDE HACHÉE XXL', price:'20.000 FC', desc:'Tacos maxi à la viande hachée, frites et cheddar.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-xxl-saucisse': { title:'TACOS SAUCISSE XXL', price:'20.000 FC', desc:'Tacos maxi à la saucisse, frites maison.', mainImage:'https://images.unsplash.com/photo-1611251135345-977543c4863b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-xxl-poisson': { title:'TACOS POISSON XXL', price:'20.000 FC', desc:'Tacos maxi au poisson, sauce tartare et frites.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'tacos-xxl-poulet': { title:'TACOS POULET XXL', price:'20.000 FC', desc:'Tacos maxi au poulet, frites à l\'intérieur, triple portion.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&fit=crop' },
+      'tacos-xxl-hache': { title:'TACOS VIANDE HACHÉE XXL', price:'20.000 FC', desc:'Tacos maxi à la viande hachée, frites et cheddar.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=600&fit=crop' },
+      'tacos-xxl-saucisse': { title:'TACOS SAUCISSE XXL', price:'20.000 FC', desc:'Tacos maxi à la saucisse, frites maison.', mainImage:'https://images.unsplash.com/photo-1611251135345-977543c4863b?w=600&fit=crop' },
+      'tacos-xxl-poisson': { title:'TACOS POISSON XXL', price:'20.000 FC', desc:'Tacos maxi au poisson, sauce tartare et frites.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fit=crop' },
       // Spéciaux
-      'tacos-gratine': { title:'TACOS GRATINÉ (L)', price:'17.500 FC', desc:'Tacos grande taille gratiné au four, fromage fondu.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-sucre': { title:'TACOS SUCRÉ (M)', price:'15.000 FC', desc:'Tacos sucré, garniture Nutella, banane, fraise.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-vegetarien': { title:'TACOS VÉGÉTARIEN (M)', price:'10.000 FC', desc:'Tacos aux légumes grillés, fromage, sauce végétale.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'tacos-gratine': { title:'TACOS GRATINÉ (L)', price:'17.500 FC', desc:'Tacos grande taille gratiné au four, fromage fondu.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&fit=crop' },
+      'tacos-sucre': { title:'TACOS SUCRÉ (M)', price:'15.000 FC', desc:'Tacos sucré, garniture Nutella, banane, fraise.', mainImage:'https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?w=600&fit=crop' },
+      'tacos-vegetarien': { title:'TACOS VÉGÉTARIEN (M)', price:'10.000 FC', desc:'Tacos aux légumes grillés, fromage, sauce végétale.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fit=crop' },
       // Existants
-      'tacos-mexicain': { title:'TACOS MEXICAIN', price:'12.500 FC', desc:'Boeuf, sauce épicée, fromage.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-poulet-grille': { title:'TACOS POULET GRILLÉ', price:'11.000 FC', desc:'Poulet grillé, sauce blanche, légumes.', mainImage:'https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-geant': { title:'TACOS GÉANT XXL', price:'18.000 FC', desc:'Triple viande, frites incluses.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-crevettes': { title:'TACOS CREVETTES', price:'15.000 FC', desc:'Crevettes grillées, sauce aigre-douce.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'tacos-veggie': { title:'TACOS VEGGIE', price:'9.500 FC', desc:'Légumes grillés, fromage.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'tacos-mexicain': { title:'TACOS MEXICAIN', price:'12.500 FC', desc:'Boeuf, sauce épicée, fromage.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&fit=crop' },
+      'tacos-poulet-grille': { title:'TACOS POULET GRILLÉ', price:'11.000 FC', desc:'Poulet grillé, sauce blanche, légumes.', mainImage:'https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=600&fit=crop' },
+      'tacos-geant': { title:'TACOS GÉANT XXL', price:'18.000 FC', desc:'Triple viande, frites incluses.', mainImage:'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fit=crop' },
+      'tacos-crevettes': { title:'TACOS CREVETTES', price:'15.000 FC', desc:'Crevettes grillées, sauce aigre-douce.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=600&fit=crop' },
+      'tacos-veggie': { title:'TACOS VEGGIE', price:'9.500 FC', desc:'Légumes grillés, fromage.', mainImage:'https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&fit=crop' },
       // Poulet croustillant
-      'crispy-4': { title:'4 MORCEAUX POULET CROUSTILLANT', price:'2.000 FC', desc:'4 morceaux de poulet pané croustillant.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'crispy-6': { title:'6 MORCEAUX + FRITES + 6 BOISSONS', price:'25.000 FC', desc:'6 morceaux de poulet, une portion de frites et 6 boissons.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'crispy-8': { title:'8 MORCEAUX + FRITES + 8 BOISSONS', price:'35.000 FC', desc:'8 morceaux de poulet, une portion de frites et 8 boissons.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'crispy-1': { title:'1 MORCEAU POULET CROUSTILLANT', price:'7.500 FC', desc:'Un morceau de poulet croustillant.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'crispy-4': { title:'4 MORCEAUX POULET CROUSTILLANT', price:'2.000 FC', desc:'4 morceaux de poulet pané croustillant.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=600&fit=crop' },
+      'crispy-6': { title:'6 MORCEAUX + FRITES + 6 BOISSONS', price:'25.000 FC', desc:'6 morceaux de poulet, une portion de frites et 6 boissons.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=600&fit=crop' },
+      'crispy-8': { title:'8 MORCEAUX + FRITES + 8 BOISSONS', price:'35.000 FC', desc:'8 morceaux de poulet, une portion de frites et 8 boissons.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=600&fit=crop' },
+      'crispy-1': { title:'1 MORCEAU POULET CROUSTILLANT', price:'7.500 FC', desc:'Un morceau de poulet croustillant.', mainImage:'https://images.unsplash.com/photo-1565299629-8d3b92f0b1f4?w=600&fit=crop' },
       // Entrées
-      'arachide': { title:'ARACHIDE GRILLÉE', price:'1.000 FC', desc:'Arachides grillées à sec, salées.', mainImage:'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'samosa-boeuf': { title:'SAMOUSSA HACHÉ (BŒUF)', price:'1.000 FC', desc:'Samoussa à la viande hachée de bœuf, épices.', mainImage:'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'samosa-veg': { title:'SAMOUSSA VÉGÉTARIEN', price:'1.000 FC', desc:'Samoussa aux légumes, pomme de terre, petits pois.', mainImage:'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'frites-simple': { title:'FRITES MOYENNES', price:'3.500 FC', desc:'Frites fraîches, sel.', mainImage:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'frites-cheddar': { title:'FRITES CHEDDAR', price:'5.000 FC', desc:'Frites nappées de sauce cheddar.', mainImage:'https://images.unsplash.com/photo-1585109649138-97581522cde8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'arachide': { title:'ARACHIDE GRILLÉE', price:'1.000 FC', desc:'Arachides grillées à sec, salées.', mainImage:'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600&fit=crop' },
+      'samosa-boeuf': { title:'SAMOUSSA HACHÉ (BŒUF)', price:'1.000 FC', desc:'Samoussa à la viande hachée de bœuf, épices.', mainImage:'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&fit=crop' },
+      'samosa-veg': { title:'SAMOUSSA VÉGÉTARIEN', price:'1.000 FC', desc:'Samoussa aux légumes, pomme de terre, petits pois.', mainImage:'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&fit=crop' },
+      'frites-simple': { title:'FRITES MOYENNES', price:'3.500 FC', desc:'Frites fraîches, sel.', mainImage:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&fit=crop' },
+      'frites-cheddar': { title:'FRITES CHEDDAR', price:'5.000 FC', desc:'Frites nappées de sauce cheddar.', mainImage:'https://images.unsplash.com/photo-1585109649138-97581522cde8?w=600&fit=crop' },
       // Desserts
-      'dessert-chocolat': { title:'DESSERT CHOCOLAT', price:'14.000 FC', desc:'Dessert au chocolat, fondant.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'dessert-vanille': { title:'DESSERT VANILLE', price:'14.000 FC', desc:'Dessert à la vanille, crémeux.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'dessert-banane': { title:'DESSERT BANANE', price:'14.000 FC', desc:'Dessert à la banane, caramel.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'dessert-fraise': { title:'DESSERT FRAISE', price:'14.000 FC', desc:'Dessert à la fraise, coulis.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'dessert-raisin': { title:'DESSERT RAISIN', price:'14.000 FC', desc:'Dessert au raisin, compoté.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'dessert-kiwi': { title:'DESSERT KIWI', price:'14.000 FC', desc:'Dessert au kiwi, acidulé.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'dessert-chocolat': { title:'DESSERT CHOCOLAT', price:'14.000 FC', desc:'Dessert au chocolat, fondant.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'dessert-vanille': { title:'DESSERT VANILLE', price:'14.000 FC', desc:'Dessert à la vanille, crémeux.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'dessert-banane': { title:'DESSERT BANANE', price:'14.000 FC', desc:'Dessert à la banane, caramel.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'dessert-fraise': { title:'DESSERT FRAISE', price:'14.000 FC', desc:'Dessert à la fraise, coulis.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'dessert-raisin': { title:'DESSERT RAISIN', price:'14.000 FC', desc:'Dessert au raisin, compoté.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'dessert-kiwi': { title:'DESSERT KIWI', price:'14.000 FC', desc:'Dessert au kiwi, acidulé.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
       // Milkshakes
-      'milkshake-choco': { title:'MILKSHAKE CHOCOLAT', price:'14.000 FC', desc:'Milkshake onctueux au chocolat.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'milkshake-vanille': { title:'MILKSHAKE VANILLE', price:'14.000 FC', desc:'Milkshake à la vanille, chantilly.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'milkshake-banane': { title:'MILKSHAKE BANANE', price:'14.000 FC', desc:'Milkshake à la banane, sirop.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'milkshake-fraise': { title:'MILKSHAKE FRAISE', price:'14.000 FC', desc:'Milkshake à la fraise, morceaux de fruits.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'milkshake-raisin': { title:'MILKSHAKE RAISIN', price:'14.000 FC', desc:'Milkshake au raisin, original.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'milkshake-kiwi': { title:'MILKSHAKE KIWI', price:'14.000 FC', desc:'Milkshake au kiwi, rafraîchissant.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'milkshake-choco': { title:'MILKSHAKE CHOCOLAT', price:'14.000 FC', desc:'Milkshake onctueux au chocolat.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'milkshake-vanille': { title:'MILKSHAKE VANILLE', price:'14.000 FC', desc:'Milkshake à la vanille, chantilly.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'milkshake-banane': { title:'MILKSHAKE BANANE', price:'14.000 FC', desc:'Milkshake à la banane, sirop.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'milkshake-fraise': { title:'MILKSHAKE FRAISE', price:'14.000 FC', desc:'Milkshake à la fraise, morceaux de fruits.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'milkshake-raisin': { title:'MILKSHAKE RAISIN', price:'14.000 FC', desc:'Milkshake au raisin, original.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
+      'milkshake-kiwi': { title:'MILKSHAKE KIWI', price:'14.000 FC', desc:'Milkshake au kiwi, rafraîchissant.', mainImage:'https://images.unsplash.com/photo-1572490122746-8145e98e8f6d?w=600&fit=crop' },
       // Suppléments
-      'cheddar': { title:'CHEDDAR', price:'3.000 FC', desc:'Supplément de cheddar.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'salami': { title:'SALAMI', price:'3.000 FC', desc:'Supplément de salami.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'gouda': { title:'GOUDA', price:'3.000 FC', desc:'Supplément de gouda.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'lard': { title:'LARD FUMÉ', price:'3.000 FC', desc:'Supplément de lard fumé.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'champignons': { title:'CHAMPIGNONS', price:'3.000 FC', desc:'Supplément de champignons.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'biscuit': { title:'BISCUIT', price:'5.000 FC', desc:'Biscuit dessert.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'sauce-andalouse': { title:'SAUCE ANDALOUSE', price:'1.500 FC', desc:'Sauce andalouse, pot individuel.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'sauce-piment': { title:'SAUCE PIMENT', price:'1.500 FC', desc:'Sauce pimentée.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'sauce-samourai': { title:'SAUCE SAMOURAÏ', price:'1.500 FC', desc:'Sauce samouraï (mayonnaise épicée).', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'sauce-curry': { title:'SAUCE CURRY', price:'1.500 FC', desc:'Sauce au curry.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
+      'cheddar': { title:'CHEDDAR', price:'3.000 FC', desc:'Supplément de cheddar.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'salami': { title:'SALAMI', price:'3.000 FC', desc:'Supplément de salami.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'gouda': { title:'GOUDA', price:'3.000 FC', desc:'Supplément de gouda.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'lard': { title:'LARD FUMÉ', price:'3.000 FC', desc:'Supplément de lard fumé.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'champignons': { title:'CHAMPIGNONS', price:'3.000 FC', desc:'Supplément de champignons.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'biscuit': { title:'BISCUIT', price:'5.000 FC', desc:'Biscuit dessert.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'sauce-andalouse': { title:'SAUCE ANDALOUSE', price:'1.500 FC', desc:'Sauce andalouse, pot individuel.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'sauce-piment': { title:'SAUCE PIMENT', price:'1.500 FC', desc:'Sauce pimentée.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'sauce-samourai': { title:'SAUCE SAMOURAÏ', price:'1.500 FC', desc:'Sauce samouraï (mayonnaise épicée).', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
+      'sauce-curry': { title:'SAUCE CURRY', price:'1.500 FC', desc:'Sauce au curry.', mainImage:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&fit=crop' },
       // Burgers
-      'burger-classic': { title:'CLASSIC BEEF', price:'9.000 FC', desc:'Steak haché, salade, tomate, oignon, sauce.', mainImage:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'burger-chicken': { title:'CHICKEN CRUNCH', price:'8.500 FC', desc:'Poulet pané, salade, sauce curry.', mainImage:'https://images.unsplash.com/photo-1615297928064-249773f8db9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' },
-      'burger-double': { title:'DOUBLE CHEESE', price:'12.000 FC', desc:'Double steak, double cheddar, oignons.', mainImage:'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80' }
+      'burger-classic': { title:'CLASSIC BEEF', price:'9.000 FC', desc:'Steak haché, salade, tomate, oignon, sauce.', mainImage:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&fit=crop' },
+      'burger-chicken': { title:'CHICKEN CRUNCH', price:'8.500 FC', desc:'Poulet pané, salade, sauce curry.', mainImage:'https://images.unsplash.com/photo-1615297928064-249773f8db9d?w=600&fit=crop' },
+      'burger-double': { title:'DOUBLE CHEESE', price:'12.000 FC', desc:'Double steak, double cheddar, oignons.', mainImage:'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&fit=crop' }
     };
 
     // ========== GESTION PANIER & WHATSAPP ==========
