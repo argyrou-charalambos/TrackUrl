@@ -1101,9 +1101,7 @@
         <button class="btn-whatsapp" onclick="sendWhatsAppOrder()">
           <i class="fab fa-whatsapp"></i> ENVOYER LA COMMANDE
         </button>
-        <button class="btn-call" onclick="window.location.href='tel:+243820000000'">
-          <i class="fas fa-phone-alt"></i> APPELER
-        </button>
+       
       </div>
     </div>
 
@@ -1125,20 +1123,21 @@
       </div>
       <div class="product-card" onclick="openProductModal('tacos-viande')">
         <img src="https://images.unsplash.com/photo-1611250188496-e4c668b70fe6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Viande Hachée">
-        <h3>TACOS VIANDE HACHÉE</h3>
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="price">10.500 FC</p>
-        <p style="color:#fde68a; font-size:13px;">Boeuf haché, cheddar</p>
-      </div>
-      <div class="product-card" onclick="openProductModal('tacos-géant')">
-        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tacos Géant">
-        <h3>TACOS GÉANT XXL</h3>
-        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="price">18.000 FC</p>
-        <p style="color:#fde68a; font-size:13px;">Toutes viandes, double portion</p>
+
+    <!-- COMMANDE PERSONNALISÉE WHATSAPP -->
+    <div class="custom-order-panel">
+      <h4><i class="fab fa-whatsapp"></i> PASSEZ VOTRE COMMANDE ICI</h4>
+      <textarea id="orderMessage" placeholder="Écrivez votre commande en détail : quels tacos, quantité, sauces, suppléments, etc." rows="5"></textarea>
+      <div class="order-actions">
+        <button class="btn-whatsapp" onclick="sendWhatsAppOrder()">
+          <i class="fab fa-whatsapp"></i> ENVOYER LA COMMANDE
+        </button>
+        <button class="btn-call" onclick="window.location.href='tel:+243820000000'">
+          <i class="fas fa-phone-alt"></i> APPELER
+        </button>
       </div>
     </div>
-
+        
     <!-- BANNIÈRES SPÉCIALES -->
     <div class="cat-banner">
       <div class="banner-item">
@@ -1159,11 +1158,6 @@
       </div>
     </div>
 
-    <!-- MARQUES / PARTENAIRES -->
-    <h3 class="section-title">🔥 NOS PARTENAIRES</h3>
-    <div class="brands">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon" style="background: white;">
-    </div>
 
     <!-- TÉMOIGNAGES -->
     <div class="testimonials">
@@ -1196,8 +1190,8 @@
 
     <!-- FOOTER -->
     <div class="footer">
-      <p><i class="fas fa-map-pin"></i> Livraison : Golf, Bel-Air, Kampemba, Centre, Katuba, Kenya, Ruashi, Kalebuka, Kigoma, Lido</p>
-      <p>© 2026 LE TACOS RESTO – Street Food Premium Lubumbashi</p>
+     
+      <p>© 2026 LE TACOS RESTO – Street Food Lubumbashi</p>
     </div>
   </section>
 
@@ -1294,7 +1288,7 @@
     function sendWhatsAppOrder() {
       const message = document.getElementById('orderMessage').value.trim();
       if (!message) { alert("Veuillez écrire votre commande."); return; }
-      const phoneNumber = "243820000000";
+      const phoneNumber = "243839898872";
       const orderText = `Bonjour Le Tacos Resto ! Voici ma commande :\n\n${message}\n\n(Commande site)`;
       window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(orderText)}`, '_blank');
     }
